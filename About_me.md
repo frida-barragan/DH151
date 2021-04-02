@@ -1,4 +1,4 @@
-<h1> Hi! </h1>
+<center><h1> Hi! </h1></center>
 
 ![IMG_9931](https://user-images.githubusercontent.com/77029932/113387068-682e8000-9340-11eb-915d-f5036beb33c4.jpg) 
 
