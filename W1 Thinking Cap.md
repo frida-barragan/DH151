@@ -21,7 +21,7 @@ I find this website really interesting because it offers the carbon footprint th
 <br>
 
 
-These maps work by mapping the distance between the origin and the destination, then the best route with established roads is determined. As for the carbon footprint, it is determined by calculating the percentage share of the tire's contribution to vehicular CO2 emissions. Via Michelin uses TomTom 2006-2016 for its navigation. 
+These maps work by mapping the distance between the origin and the destination, then the best route with established roads is determined. In terms of maps, Via Michelin is basic in that the routes provided are the same one could get from other map apps (for example Google Maps) but I think the extra features, including estimated cost, set it apart. As for the carbon footprint, it is determined by calculating the percentage share of the tire's contribution to vehicular CO2 emissions. Via Michelin uses TomTom 2006-2016 for its navigation. 
 <br>
 
 
