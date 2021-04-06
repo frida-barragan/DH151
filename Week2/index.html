@@ -59,10 +59,12 @@
                     }
                 ]
         
+        data.forEach(function(item){
+                var marker = L.marker(item.lat, item.lon).addTo(map)
+                        .bindPopup(item.title)
+                        .openPopup();
+});
 
-		    var marker = L.marker([23.634501,-102.552784]).addTo(map)
-				    .bindPopup('Mexico')
-				    .openPopup();	
 
 	</script>
 
