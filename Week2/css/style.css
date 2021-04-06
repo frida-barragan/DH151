@@ -20,7 +20,7 @@ body {
 .header {
 	grid-area: header;
 	padding:10px;
-	background-color: #333;
+	background-color: rgb(190, 178, 167);
 	color: white;
 	font-size: 2em;
 }
@@ -28,7 +28,7 @@ body {
 .sidebar {
 	grid-area: sidebar;
 	padding:10px;
-	background-color: #555;
+	background-color: rgb(209, 198, 191);
 }
 
 .content {
