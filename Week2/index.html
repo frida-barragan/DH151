@@ -54,7 +54,7 @@
                         'lon': -111.09373
                     },
                     {
-                        'title':'Texas',
+                        'title': <a href= "https://storymaps.arcgis.com/stories/9f5648663c374ba5a62c0f470fc87bd7" target="_blank">Texas</a>,
                         'lat': 31.0000,
                         'lon': -100.00000
                     }
@@ -64,15 +64,7 @@
                 var marker = L.marker([item.lat, item.lon]).addTo(map)
                         .bindPopup(item.title)
                         .openPopup();});
-        marker.forEach(function(item){
-                    var marker = new google.maps.Marker({
-                    position: new google.maps.LatLon(lat,lon),
-                    map: map,
-                    icon: 'texas.gif',
-                    zIndex: 1
-});
-        
-});      
+          
           
 
 
