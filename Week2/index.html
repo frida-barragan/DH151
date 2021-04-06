@@ -430,7 +430,7 @@
                 
         
         data.forEach(function(item){
-                var marker = L.marker([item.lat, item.lon]).addTo(map)
+                var marker = L.marker([item.lat, item.lon] , style = "background-color:Tomato;").addTo(map)
                         .bindPopup(item.title + " " +  item.img)
                         ;});
         
