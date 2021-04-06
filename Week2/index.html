@@ -362,7 +362,7 @@
                 
         
         data.forEach(function(item){
-                var marker = L.marker([item.lat, item.lon], color = red).addTo(map)
+                var marker = L.marker([item.lat, item.lon]).addTo(map)
                         .bindPopup(item.title + " " +  item.img)
                         ;});
         
