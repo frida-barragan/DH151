@@ -66,7 +66,7 @@
                         .bindPopup(item.title)
                         ;});
         data.forEach(function(item){
-                var marker = L.marker([item.lat, item.lon]).addTo(map)
+            var marker = L.marker([item.title]).addTo(map)
                         .bindPopup(item.img)
                         ;});
           
