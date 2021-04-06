@@ -29,7 +29,7 @@ body {
 	grid-area: sidebar;
 	padding:10px;
 	background-color: rgb(209, 198, 191);
-	font-style: oblique ;
+	
 }
 
 .content {
