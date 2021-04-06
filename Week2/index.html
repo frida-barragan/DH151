@@ -60,10 +60,11 @@
                         'img': '<img src="images/tex.jpeg" width="100" height="50"/>'
                     }
                 ]
+                
         
         data.forEach(function(item){
                 var marker = L.marker([item.lat, item.lon]).addTo(map)
-                        .bindPopup("item.title", "item.img")
+                        .bindPopup(item.title + item.img)
                         ;});
         
           
