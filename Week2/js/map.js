@@ -421,3 +421,16 @@ function flyToIndex(index){
     map.flyTo([data[index].lat,data[index].lon],12)
     myMarkers.getLayers()[index].openPopup()
 }
+
+var map = L.map('map').setView([0,-80], 2.5);
+        
+		L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+			attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+		}).addTo(map);
+                
+        
+        data.forEach(function(item){
+                var marker = L.marker([item.lat, item.lon]).addTo(map)
+                        .bindPopup(item.title + " " +  item.img)
+                        ;});  
+                        
