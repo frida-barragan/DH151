@@ -5,14 +5,14 @@
   
   body{
     margin:0;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-family:  'Gill Sans', sans-serif;
     font-size:17px;
-    color:#926239;
+    color:#8799ac;
     line-height:1.6;
   }
   
   #showcase{
-    background-image:url('http://traversymedia.com/downloads/assets/beachshowcase.jpg');
+    background-image:url('https://i.pinimg.com/originals/cf/db/4f/cfdb4fc95aedbbebdb7da1bab310e012.jpg');
     background-size:cover;
     background-position:center;
     height:100vh;
@@ -21,26 +21,33 @@
     justify-content:center;
     align-items:center;
     text-align:center;
-    padding:0 20px;
+    padding:20px;
+    opacity: 60%;
   }
   
   #showcase h1{
-    font-size:50px;
+    font-size:60px;
     line-height:1.2;
+    color: #b2beb5;
+
+ 
   }
+
   
   #showcase p{
-    font-size:20px;
+    font-size:15px;
+    font-style: italic;
   }
   
   #showcase .button{
     font-size:18px;
     text-decoration:none;
-    color:#926239;
+    color:#b38a66;
     border:#926239 1px solid;
     padding:10px 20px;
     border-radius:10px;
     margin-top:20px;
+    color:grey;
   }
   
   #showcase .button:hover{
