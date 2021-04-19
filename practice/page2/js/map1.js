@@ -398,8 +398,8 @@ let myMarkers = L.featureGroup();
 // loop through data
 data.forEach(function(item, index){
     let marker = L.marker([item.lat,item.lon], {icon: greyIcon})
-        .bindPopup(`<div>${item.title}</div>
-        <img src="${item.img}" width = 100%> 
+        .bindPopup(`<div><b><center>${item.title}</b></div>
+        <img src="${item.img}" width = 100% > 
         `)
         
 
