@@ -368,7 +368,7 @@ let data = [
       'title':'Spain',
       'lat': 40.416775,
       'lon': -3.703790,
-        'img': 'https://miro.medium.com/max/5132/1*cQZhys1PMCiH2mJzqOSHTA.jpeg'
+        'img': 'https://www.realmofhistory.com/wp-content/uploads/2018/07/facts_spanish_conquistadors-min.jpg'
       }
     ]
     
