@@ -389,8 +389,10 @@ L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.pn
     attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
 }).addTo(map);
 
+
 //create feature group
 let myMarkers = L.featureGroup();
+
 
 
 // loop through data
@@ -417,21 +419,23 @@ function flyToIndex(index){
 
 
 myMarkers.addTo(map)
-// define layers
-let layers = {
-    "My Markers": myMarkers
-}
+
 
 // Polyline
 let myLine = L.featureGroup();
-// create a red polyline from an array of LatLng points
+
+// loop data
 data.forEach(function(item, index){
   var latlngs = [
   [[item.lat, item.lon],
    [40.416775, -3.703790]] // Spain coordinates
 ];
 
-  var polyline = L.polyline(latlngs, {color: 'white', weight: 1, smoothFactor: 1 }).addTo(map);
+    
+
+  var polyline = L.polyline(latlngs, {color:"grey", weight: 1, smoothFactor: 1 }).addTo(map);
+    myLine.addLayer(polyline)
+    myLine.addTo(map) 
 
 // zoom the map to the polyline
   map.fitBounds(polyline.getBounds());
@@ -439,12 +443,17 @@ data.forEach(function(item, index){
 
 });
 
-
-
+// define layers
+let layers = {
+  "Markers": myMarkers,
+  "Lines": myLine 
+  
+  
+}
 
 // add layer control box
-L.control.layers(null,layers).addTo(map)
 
+L.control.layers(null, layers).addTo(map);
 
 map.fitBounds(myMarkers.getBounds())
 
@@ -452,4 +461,5 @@ function flyToIndex(index){
     map.flyTo([data[index].lat,data[index].lon],12)
     myMarkers.getLayers()[index].openPopup()
 }
+
 
