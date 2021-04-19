@@ -25,7 +25,7 @@ body {
 	font-size: 3em;
 	padding-top: 1%;
 	animation-name: hd;
-    animation-duration: 10s;
+    animation-duration: 11s;
 }
 @keyframes hd {
 	from {background-color: white  }
