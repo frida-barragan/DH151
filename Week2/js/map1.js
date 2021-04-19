@@ -362,7 +362,14 @@ let data = [
     'lat': 13.193887,
     'lon': -59.543198,
       'img': 'https://miro.medium.com/max/5132/1*cQZhys1PMCiH2mJzqOSHTA.jpeg'
-    }
+    },
+    {
+      'id' :52,
+      'title':'Spain',
+      'lat': 40.416775,
+      'lon': -3.703790,
+        'img': 'https://miro.medium.com/max/5132/1*cQZhys1PMCiH2mJzqOSHTA.jpeg'
+      }
     ]
     
 
@@ -391,9 +398,12 @@ data.forEach(function(item, index){
 
 });
 
+
+
 function flyToIndex(index){
     map.flyTo([data[index].lat, data[index].lon], 12)
 }
+
 
 
 myMarkers.addTo(map)
@@ -401,6 +411,26 @@ myMarkers.addTo(map)
 let layers = {
     "My Markers": myMarkers
 }
+
+// Polyline
+let myLine = L.featureGroup();
+// create a red polyline from an array of LatLng points
+data.forEach(function(item, index){
+  var latlngs = [
+  [[item.lat, item.lon],
+   [40.416775, -3.703790]] // Spain coordinates
+];
+
+  var polyline = L.polyline(latlngs, {color: 'white', weight: 1, smoothFactor: 1 }).addTo(map);
+
+// zoom the map to the polyline
+  map.fitBounds(polyline.getBounds());
+
+
+});
+
+
+
 
 // add layer control box
 L.control.layers(null,layers).addTo(map)
@@ -412,3 +442,4 @@ function flyToIndex(index){
     map.flyTo([data[index].lat,data[index].lon],12)
     myMarkers.getLayers()[index].openPopup()
 }
+
