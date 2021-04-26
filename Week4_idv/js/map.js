@@ -17,12 +17,12 @@ $( document ).ready(function() {
 function createMap(lat,lon,zl){
 	map = L.map('map').setView([lat,lon], zl);
 
-	L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-		attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-	}).addTo(map);
+	L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png', {
+    attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
+}).addTo(map);
 }
 
-// function to read csv data on the Percent of Adults (Ages 18 Years and Older) Who Reported Difficulty in Obtaining Needed Medical Care
+// function to read csv data
 function readCSV(path){
 	Papa.parse(path, {
 		header: true,
@@ -41,53 +41,37 @@ function mapCSV(data){
     let circleOptions = {
         radius: 5,
         weight : 1,
-        color : 'black',
-        fillColor: 'black',
-        fillOpacity: 0.5,
+        color : 'orange',
+        fillColor: 'orange',
+        fillOpacity: 1,
     }
-
 	
-	// loop through each entry on the Percent of Adults (Ages 18 Years and Older) Who Reported Difficulty in Obtaining Needed Medical Care
+	// loop through each entry
 	data.data.forEach(function(item,index){
 		// create a marker
 		let marker = L.circleMarker([item.latitude,item.longitude],circleOptions)
 		.on('mouseover',function(){
-			this.bindPopup(`${item.title}<br>${item.percent}`).openPopup()
-
-		
-
+			this.bindPopup(`<p align = "center" > <b>${item.title}</b><br>${item.percent}</p>`).openPopup()
 		})
 
-		// add marker to featuregroup on the Percent of Adults (Ages 18 Years and Older) Who Reported Difficulty in Obtaining Needed Medical Care
+		// add marker to featuregroup
 		markers.addLayer(marker)
-		$('.sidebar').append(`<div class= "sidebar-item" 
-    	onclick="flyToIndex(${index})"><center>${item.title}</center></div>`)
+
+		// add entry to sidebar
+		$('.sidebar').append(`<div class= "sidebar-item" onmouseover="panTocircleMarker(${index})"> <center><br> ${item.title} <br></center></div>`)
 	})
 
 	// add featuregroup to map
 	markers.addTo(map)
-	// markers on the Percent of Adults (Ages 18 Years and Older) Who Reported Difficulty in Obtaining Needed Medical Care.
-	let layers = {
-		"Percent of Adults (Ages 18 Years and Older) Who Reported Difficulty in Obtaining Needed Medical Care": markers
-		
-	}
-	
-
 
 	// fit map to markers
 	map.fitBounds(markers.getBounds())
 }
+function panTocircleMarker(index){
+	// zoom to level 17 first
+	map.setZoom(13);
+	// pan to the marker
+	map.panTo(markers.getLayers()[index]._latlng).openPopup();
 
-
-function flyToIndex(index){
-    map.flyTo([data[index].latitude,data[index].longitude],12)
-    myMarkers.getLayers()[index].openPopup()
-}
-
-
-
-
-function flyToIndex(index){
-    map.flyTo([data[index].latitude,data[index].longitude],12)
-    myMarkers.getLayers()[index].openPopup()
+	
 }
