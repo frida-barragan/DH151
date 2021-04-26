@@ -1,0 +1,58 @@
+body,html {
+	margin:0;
+	height:100%;
+	width:100%;
+}
+
+#map {
+	height: 100%;
+}
+body {
+	font-family:  'Gill Sans', sans-serif;
+	color:white;
+	display: grid;
+	grid-template-rows: 80px 1fr;
+	grid-template-columns: 250px 1fr;
+	grid-template-areas: 
+	"header header"
+	"sidebar content";
+}
+
+.header {
+	grid-area: header;
+	background-color: #bccbdb;
+	color: white;
+	font-size: 3em;
+	padding-top: 1%;
+	animation-name: hd;
+    animation-duration: 11s;
+}
+@keyframes hd {
+	from {background-color: white  }
+	to {background-color: #bccbdb;}
+  }
+
+.sidebar {
+	font-size:small;
+	grid-area: sidebar;
+	padding:10px;
+	background-color: #c2cec5;
+	
+}
+
+.content {
+	grid-area: content;
+}
+
+
+.sidebar-item {
+	padding: 7px;
+	background: rgb(196, 174, 173);
+	border: 1px solid rgb(151, 136, 136);
+	margin: 3px;
+	color: rgb(255, 254, 254);
+}
+.sidebar {
+	overflow-y: scroll; /* Show vertical scrollbar */
+	overflow-x: scroll; /* Show horizontal scrollbar */
+  }
