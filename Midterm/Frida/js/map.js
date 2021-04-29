@@ -46,6 +46,17 @@ function mapCSV(data){
         fillColor: 'red',
         fillOpacity: 1,
     }
+    var polygon = L.polygon([
+        [34.835595, -118.933704], //gorman
+        [34.713357, -117.744007], // redman
+        [34.530240, -117.728638],
+        [34.172154, -117.728309],
+        [34.403302, -118.434513],
+        [34.573184, -118.255588],
+        [34.835595, -118.933704]
+    ]).addTo(map);
+    polygon.bindPopup("Service Area 1");
+    polygon.setStyle({fillColor: '#0000FF'})
 
 	var SA = "SA1";
     $('.sidebar').append(`<div class= "SA1"> <b> Service Area 1 </b></div>`)
@@ -67,6 +78,22 @@ function mapCSV(data){
             }
             
         })
+        var polygon = L.polygon([
+            [34.835595, -118.933704],
+            [34.163440, -118.698429],
+            [34.113699, -118.851156],
+            [34.130726, -118.609063],
+            [34.147776, -118.590523],
+            [34.131564, -118.350601],
+            [34.122626, -118.254928],
+            [34.202783, -118.188346],
+            [34.257925, -118.000696],
+            [34.403302, -118.434513],
+            [34.573184, -118.255588],
+            [34.835595, -118.933704]
+        ]).addTo(map);
+        polygon.bindPopup("Service Area 2");
+        polygon.setStyle({fillColor: '#0000FF'})
 
     var SA2 = "SA2";
     $('.sidebar').append(`<div class= "SA2"> <b> Service Area 2 </b></div>`)
@@ -88,8 +115,22 @@ function mapCSV(data){
         }
         
     })
+    var polygon = L.polygon([
+        [34.172154, -117.728309],
+        [34.257925, -118.000696],
+        [34.202783, -118.188346],
+        [34.122626, -118.254928],
+        [34.041012, -118.170887],
+        [33.954553, -117.916335],
+        [33.957502, -117.751629]
+        
+    ]).addTo(map);
+    polygon.bindPopup("Service Area 3");
+    polygon.setStyle({fillColor: 'red'})
+
     let SA3 = "SA3";
     $('.sidebar').append(`<div class= "SA3"> <b> Service Area 3 </b></div>`)
+
     // loop through each entry
     data.data.forEach(function(item,index){
         // create a marker
@@ -108,6 +149,20 @@ function mapCSV(data){
         }
         
     })
+
+    var polygon = L.polygon([
+        [34.131564, -118.350601],
+        [34.134487, -118.400597],
+        [34.026573, -118.349474],
+        [33.971708, -118.228604],
+        [34.041012, -118.170887],
+        [34.122626, -118.254928]
+        
+
+    ]).addTo(map);
+    polygon.bindPopup("Service Area 4");
+    
+    polygon.setStyle({fillColor: 'blue'})
     let SA4 = "SA4";
     $('.sidebar').append(`<div class= "SA4"> <b> Service Area 4 </b></div>`)
     // loop through each entry
@@ -128,6 +183,25 @@ function mapCSV(data){
         }
         
     })
+
+    var polygon = L.polygon([
+        [34.134487, -118.400597],
+        [34.026573, -118.349474],
+        [33.966029, -118.355042],
+        [33.927518, -118.433549],
+        [34.027973, -118.520753],
+        [34.041630, -118.568818],
+        [34.031388, -118.720224],
+        [34.001219, -118.805073],
+        [34.113699, -118.851156],
+        [34.130726, -118.609063],
+        [34.147776, -118.590523]
+        
+
+    ]).addTo(map);
+    polygon.bindPopup("Service Area 5");
+    
+    polygon.setStyle({fillColor: 'blue'})
     let SA5 = "SA5";
     $('.sidebar').append(`<div class= "SA5"> <b> Service Area 5 </b></div>`)
     // loop through each entry
@@ -148,6 +222,19 @@ function mapCSV(data){
         }
         
     })
+
+    var polygon = L.polygon([
+        [33.966029, -118.355042],
+        [34.026573, -118.349474], //
+        [33.971708, -118.228604], //
+        [33.887255, -118.168383],
+        [33.888150, -118.275044],
+        [33.966029, -118.355042]
+
+    ]).addTo(map);
+    polygon.bindPopup("Service Area 6");
+    polygon.setStyle({fillColor: 'blue'})
+
     let SA6 = "SA6";
     $('.sidebar').append(`<div class= "SA6"> <b> Service Area 6 </b></div>`)
     // loop through each entry
@@ -168,6 +255,19 @@ function mapCSV(data){
         }
         
     })
+
+    var polygon = L.polygon([
+        [33.954553, -117.916335],
+        [34.041012, -118.170887],
+        [33.971708, -118.228604],
+        [33.846114, -118.137942],
+        [33.790189, -118.149040],
+        [33.790343, -118.179854],
+        [33.827645, -118.065406],
+        [33.954553, -117.916335]
+    ]).addTo(map);
+    polygon.bindPopup("Service Area 7");
+    polygon.setStyle({fillColor: 'red'})
     let SA7 = "SA7";
     $('.sidebar').append(`<div class= "SA7"> <b> Service Area 7 </b></div>`)
     // loop through each entry
@@ -188,6 +288,26 @@ function mapCSV(data){
         }
         
     })
+    var polygon = L.polygon([
+        [33.827645, -118.065406],
+        [33.746821, -118.108733],
+        [33.708940, -118.284789],
+        [33.775922, -118.427702],
+        [33.830441, -118.389376],
+        [33.927518, -118.433549],
+        [33.966029, -118.355042],
+        [33.888150, -118.275044],
+        [33.887255, -118.168383],
+        [33.846114, -118.137942],
+        [33.801054, -118.145629],
+        [33.790158, -118.180224],
+        [33.789924, -118.149209],
+        [33.801199, -118.147270]
+
+    ]).addTo(map);
+    polygon.bindPopup("Service Area 8");
+    polygon.setStyle({fillColor: 'blue'})
+
     let SA8 = "SA8";
     $('.sidebar').append(`<div class= "SA8"> <b> Service Area 8 </b></div>`)
     // loop through each entry
