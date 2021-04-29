@@ -40,9 +40,9 @@ function readCSV(path){
 function mapCSV(data){
 
     let circleOptions = {
-        radius: 5,
+        radius: 3,
         weight : 1,
-        color : 'white',
+        color : 'red',
         fillColor: 'red',
         fillOpacity: 1,
     }
@@ -56,7 +56,7 @@ function mapCSV(data){
         [34.835595, -118.933704]
     ]).addTo(map);
     polygon.bindPopup("Service Area 1");
-    polygon.setStyle({fillColor: '#0000FF'})
+    polygon.setStyle({color: '#ADA3A4', fillColor:'#ADA3A4',fillOpacity: 0.5})
 
 	var SA = "SA1";
     $('.sidebar').append(`<div class= "SA1"> <b> Service Area 1 </b></div>`)
@@ -93,7 +93,7 @@ function mapCSV(data){
             [34.835595, -118.933704]
         ]).addTo(map);
         polygon.bindPopup("Service Area 2");
-        polygon.setStyle({fillColor: '#0000FF'})
+        polygon.setStyle({color:'#9CC0E7' , fillColor: '#9CC0E7', fillOpacity: 0.5})
 
     var SA2 = "SA2";
     $('.sidebar').append(`<div class= "SA2"> <b> Service Area 2 </b></div>`)
@@ -126,7 +126,7 @@ function mapCSV(data){
         
     ]).addTo(map);
     polygon.bindPopup("Service Area 3");
-    polygon.setStyle({fillColor: 'red'})
+    polygon.setStyle({color: '#D5C28B', fillColor:'#D5C28B', fillOpacity: 0.5})
 
     let SA3 = "SA3";
     $('.sidebar').append(`<div class= "SA3"> <b> Service Area 3 </b></div>`)
@@ -162,7 +162,7 @@ function mapCSV(data){
     ]).addTo(map);
     polygon.bindPopup("Service Area 4");
     
-    polygon.setStyle({fillColor: 'blue'})
+    polygon.setStyle({color: '#E7D6C6', fillColor:'#E7D6C6', fillOpacity: 0.5})
     let SA4 = "SA4";
     $('.sidebar').append(`<div class= "SA4"> <b> Service Area 4 </b></div>`)
     // loop through each entry
@@ -201,7 +201,7 @@ function mapCSV(data){
     ]).addTo(map);
     polygon.bindPopup("Service Area 5");
     
-    polygon.setStyle({fillColor: 'blue'})
+    polygon.setStyle({color: '#747884', fillColor:'#747884', fillOpacity: 0.5})
     let SA5 = "SA5";
     $('.sidebar').append(`<div class= "SA5"> <b> Service Area 5 </b></div>`)
     // loop through each entry
@@ -233,7 +233,7 @@ function mapCSV(data){
 
     ]).addTo(map);
     polygon.bindPopup("Service Area 6");
-    polygon.setStyle({fillColor: 'blue'})
+    polygon.setStyle({color: '#9BA4A8', fillColor:'#9BA4A8',fillOpacity: 0.5 })
 
     let SA6 = "SA6";
     $('.sidebar').append(`<div class= "SA6"> <b> Service Area 6 </b></div>`)
@@ -267,7 +267,7 @@ function mapCSV(data){
         [33.954553, -117.916335]
     ]).addTo(map);
     polygon.bindPopup("Service Area 7");
-    polygon.setStyle({fillColor: 'red'})
+    polygon.setStyle({color: '#A5A37E', fillColor:'#A5A37E', fillOpacity: 0.5})
     let SA7 = "SA7";
     $('.sidebar').append(`<div class= "SA7"> <b> Service Area 7 </b></div>`)
     // loop through each entry
@@ -306,7 +306,7 @@ function mapCSV(data){
 
     ]).addTo(map);
     polygon.bindPopup("Service Area 8");
-    polygon.setStyle({fillColor: 'blue'})
+    polygon.setStyle({color: '#D9D0BA', fillColor:'#D9D0BA', fillOpacity: 0.5})
 
     let SA8 = "SA8";
     $('.sidebar').append(`<div class= "SA8"> <b> Service Area 8 </b></div>`)
