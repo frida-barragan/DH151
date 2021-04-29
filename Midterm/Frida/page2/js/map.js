@@ -5,6 +5,14 @@ let lon = 0;
 let zl = 3; //zoom level
 let path = "data/mhp.csv";
 let markers = L.featureGroup();
+let marker1 = L.featureGroup();
+let marker2 = L.featureGroup();
+let marker3 = L.featureGroup();
+let marker4 = L.featureGroup();
+let marker5 = L.featureGroup();
+let marker6 = L.featureGroup();
+let marker7 = L.featureGroup();
+let marker8 = L.featureGroup();
 
 
 // initialize
@@ -69,7 +77,8 @@ function mapCSV(data){
             })
     
             // add marker to featuregroup
-            markers.addLayer(marker)
+            marker1.addLayer(marker)
+            marker1.addTo(map)
     
     
             // add entry to sidebar by service area
@@ -106,7 +115,7 @@ function mapCSV(data){
         })
 
         // add marker to featuregroup
-        markers.addLayer(marker)
+        
 
 
         // add entry to sidebar by service area
@@ -330,10 +339,19 @@ function mapCSV(data){
     })
     
 // add featuregroup to map
-	markers.addTo(map)
+
     
     let layers = {
-        "Markers": markers,
+        "Marker1": marker1,
+        "Marker2": marker2,
+        "Marker3": marker3,
+        "Marker4": marker4,
+        "Marker5": marker5,
+        "Marker6": marker6,
+        "Marker7": marker7,
+        "Marker8": marker8
+        
+        
     }
     L.control.layers(null, layers).addTo(map);
 
