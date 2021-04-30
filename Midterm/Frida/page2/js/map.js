@@ -3,16 +3,16 @@ let map;
 let lat = 0;
 let lon = 0;
 let zl = 3; //zoom level
+
 let path = "data/mhp.csv";
-let marker = L.featureGroup();
-let marker1 = L.featureGroup();
-let marker2 = L.featureGroup();
-let marker3 = L.featureGroup();
-let marker4 = L.featureGroup();
-let marker5 = L.featureGroup();
-let marker6 = L.featureGroup();
-let marker7 = L.featureGroup();
-let marker8 = L.featureGroup();
+var marker1 = new L.featureGroup();
+var marker2 = new L.featureGroup();
+var marker3 = new L.featureGroup();
+var marker4 = new L.featureGroup();
+var marker5 = new L.featureGroup();
+var marker6 = new L.featureGroup();
+var marker7 = new L.featureGroup();
+var marker8 = new L.featureGroup();
 let fg1 = L.featureGroup([marker1,marker2,marker3,marker4,marker5,marker6,marker7,marker8]); 
 let csvdata;
 let sa1_poly = L.polygon([
@@ -110,7 +110,7 @@ $( document ).ready(function() {
 
 // create the map
 function createMap(lat,lon,zl){
-	map = L.map('map').setView([lat,lon], zl, 
+	map = L.map('map').setView([lat,lon], zl
     );
 
 	L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png', {
@@ -134,7 +134,7 @@ function readCSV(path){
             mapCSV("SA6",sa6_poly);
             mapCSV("SA7",sa7_poly);
             mapCSV("SA8",sa8_poly);
-            
+
 		}
 	});
 }
@@ -151,7 +151,10 @@ function mapCSV(SA, poly){
 
     // loop through each entry
     
+    
         csvdata.data.forEach(function(item, index){
+
+            
         
             if (item.SA == SA){
                 poly.addTo(map)
@@ -184,39 +187,40 @@ function mapCSV(SA, poly){
                     $('.sidebar').append('Service Area 8')}
                 
 
-
-                // Add the markers as layers into the map (the function we created added all the layers just into marker 1 so the user couldn't toggle service areas on/off)
-                if (item.SA == "SA1"){  
-                    marker1.addLayer(marker).addTo(map);
-                    }
-                else if (item.SA == "SA2"){
-                        marker2.addLayer(marker).addTo(map);
+                            //This is where the error occurs that causes 8 control boxes to be created
+                // Add the markers as layers into the map (the function we created added all the layers just into marker 1 so the user couldn't toggle service area markers on/off)
+                
+                    if (item.SA == "SA1"){  
+                        marker1.addLayer(marker).addTo(map);
                         }
-                else if (item.SA == "SA3"){
-                        marker3.addLayer(marker).addTo(map);
-                        }
-                else if (item.SA == "SA4"){
-                        marker4.addLayer(marker).addTo(map);
-                        }
-                else if (item.SA == "SA5"){
-                        marker5.addLayer(marker).addTo(map);
-                        }
-                else if (item.SA == "SA6"){
-                        marker6.addLayer(marker).addTo(map);
-                        }
-                else if (item.SA == "SA7"){
-                        marker7.addLayer(marker).addTo(map);
-                        }
-                else if(item.SA == "SA8"){
-                        marker8.addLayer(marker).addTo(map);
-                        }
+                    else if (item.SA == "SA2"){
+                            marker2.addLayer(marker).addTo(map);
+                            }
+                    else if (item.SA == "SA3"){
+                            marker3.addLayer(marker).addTo(map);
+                            }
+                    else if (item.SA == "SA4"){
+                            marker4.addLayer(marker).addTo(map);
+                            }
+                    else if (item.SA == "SA5"){
+                            marker5.addLayer(marker).addTo(map);
+                            }
+                    else if (item.SA == "SA6"){
+                            marker6.addLayer(marker).addTo(map);
+                            }
+                    else if (item.SA == "SA7"){
+                            marker7.addLayer(marker).addTo(map);
+                            }
+                    else if(item.SA == "SA8"){
+                            marker8.addLayer(marker).addTo(map);
+                            }
                     
                 $('.sidebar').append(`<div class= "SA"> <center><br> ${item.Name} <br></center></div>`)
                  }
             }   
         )
         //create the different marker layers
-        let overlays = {
+        var layers = {
             "Service Area 1": marker1,
             "Service Area 2": marker2,
             "Service Area 3": marker3,
@@ -227,6 +231,6 @@ function mapCSV(SA, poly){
             "Service Area 8": marker8
              } 
              // append the layers into a control box    
- L.control.layers(null, overlays).addTo(map);    
+ L.control.layers(null, layers).addTo(map);    
  map.fitBounds(fg1.getBounds());                
 }
