@@ -4,6 +4,7 @@ let lat = 0;
 let lon = 0;
 let zl = 3; //zoom level
 let path = "data/mhp.csv";
+let marker = L.featureGroup();
 let marker1 = L.featureGroup();
 let marker2 = L.featureGroup();
 let marker3 = L.featureGroup();
@@ -133,6 +134,7 @@ function readCSV(path){
             mapCSV("SA6",sa6_poly);
             mapCSV("SA7",sa7_poly);
             mapCSV("SA8",sa8_poly);
+            
 		}
 	});
 }
@@ -208,10 +210,12 @@ function mapCSV(SA, poly){
                 else if(item.SA == "SA8"){
                         marker8.addLayer(marker).addTo(map);
                         }
-                        $('.sidebar').append(`<div class= "SA"> <center><br> ${item.Name} <br></center></div>`)
+                    
+                $('.sidebar').append(`<div class= "SA"> <center><br> ${item.Name} <br></center></div>`)
                  }
             }   
-        )  
+        )
+        //create the different marker layers
         let overlays = {
             "Service Area 1": marker1,
             "Service Area 2": marker2,
@@ -222,7 +226,7 @@ function mapCSV(SA, poly){
             "Service Area 7": marker7,
             "Service Area 8": marker8
              } 
-             
+             // append the layers into a control box    
  L.control.layers(null, overlays).addTo(map);    
  map.fitBounds(fg1.getBounds());                
 }
