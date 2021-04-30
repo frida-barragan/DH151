@@ -146,6 +146,7 @@ function mapCSV(SA, poly){
         fillColor: 'white',
         fillOpacity: 1,
     }
+
     // loop through each entry
     
         csvdata.data.forEach(function(item, index){
@@ -186,25 +187,25 @@ function mapCSV(SA, poly){
                 if (item.SA == "SA1"){  
                     marker1.addLayer(marker).addTo(map);
                     }
-                if (item.SA == "SA2"){
+                else if (item.SA == "SA2"){
                         marker2.addLayer(marker).addTo(map);
                         }
-                if (item.SA == "SA3"){
+                else if (item.SA == "SA3"){
                         marker3.addLayer(marker).addTo(map);
                         }
-                if (item.SA == "SA4"){
+                else if (item.SA == "SA4"){
                         marker4.addLayer(marker).addTo(map);
                         }
-                if (item.SA == "SA5"){
+                else if (item.SA == "SA5"){
                         marker5.addLayer(marker).addTo(map);
                         }
-                if (item.SA == "SA6"){
+                else if (item.SA == "SA6"){
                         marker6.addLayer(marker).addTo(map);
                         }
-                if (item.SA == "SA7"){
+                else if (item.SA == "SA7"){
                         marker7.addLayer(marker).addTo(map);
                         }
-                if (item.SA == "SA8"){
+                else if(item.SA == "SA8"){
                         marker8.addLayer(marker).addTo(map);
                         }
                         $('.sidebar').append(`<div class= "SA"> <center><br> ${item.Name} <br></center></div>`)
