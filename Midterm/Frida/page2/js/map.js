@@ -146,10 +146,6 @@ function mapCSV(SA, poly){
         fillColor: 'white',
         fillOpacity: 1,
     }
-
-    
-
-
     // loop through each entry
     
         csvdata.data.forEach(function(item, index){
@@ -186,9 +182,8 @@ function mapCSV(SA, poly){
                 
 
 
-
-                if (item.SA == "SA1"){
-                    
+                // Add the markers as layers into the map (the function we created added all the layers just into marker 1 so the user couldn't toggle service areas on/off)
+                if (item.SA == "SA1"){  
                     marker1.addLayer(marker).addTo(map);
                     }
                 if (item.SA == "SA2"){
@@ -214,24 +209,8 @@ function mapCSV(SA, poly){
                         }
                         $('.sidebar').append(`<div class= "SA"> <center><br> ${item.Name} <br></center></div>`)
                  }
-                
-            
-                
-                
-
-                
-            
-            
-            
-            
-            }
-
-   
-            
-        )
-        
-    
-            
+            }   
+        )  
         let overlays = {
             "Service Area 1": marker1,
             "Service Area 2": marker2,
@@ -246,22 +225,3 @@ function mapCSV(SA, poly){
  L.control.layers(null, overlays).addTo(map);    
  map.fitBounds(fg1.getBounds());                
 }
-
-
-         
-     
-
-     
-     
-     
-     
-        
-        
-            
-                
- 
-
-      
-   
-
-
