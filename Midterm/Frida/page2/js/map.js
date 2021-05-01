@@ -102,6 +102,17 @@ let sa8_poly = L.polygon([
     [33.789924, -118.149209],
     [33.801199, -118.147270]
     ]);
+
+    let layers = {
+        "Service Area 1": marker1,
+        "Service Area 2": marker2,
+        "Service Area 3": marker3,
+        "Service Area 4": marker4,
+        "Service Area 5": marker5,
+        "Service Area 6": marker6,
+        "Service Area 7": marker7,
+        "Service Area 8": marker8
+         } 
 // initialize
 $( document ).ready(function() {
     createMap(lat,lon,zl);
@@ -134,6 +145,9 @@ function readCSV(path){
             mapCSV("SA6",sa6_poly);
             mapCSV("SA7",sa7_poly);
             mapCSV("SA8",sa8_poly);
+
+         L.control.layers(null, layers).addTo(map);    
+ 
 
 		}
 	});
@@ -220,17 +234,7 @@ function mapCSV(SA, poly){
             }   
         )
         //create the different marker layers
-        var layers = {
-            "Service Area 1": marker1,
-            "Service Area 2": marker2,
-            "Service Area 3": marker3,
-            "Service Area 4": marker4,
-            "Service Area 5": marker5,
-            "Service Area 6": marker6,
-            "Service Area 7": marker7,
-            "Service Area 8": marker8
-             } 
+        
              // append the layers into a control box    
- L.control.layers(null, layers).addTo(map);    
- map.fitBounds(fg1.getBounds());                
+             map.fitBounds(fg1.getBounds());                
 }
