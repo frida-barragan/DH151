@@ -28,7 +28,7 @@
   #showcase h1{
     font-size:60px;
     line-height:1.2;
-    color: #b2beb5;
+    color: #046582bd;
 
  
   }
@@ -43,8 +43,8 @@
   #showcase .button{
     font-size:18px;
     text-decoration:none;
-    color:#b38a66;
-    border:#926239 1px solid;
+    color:#5f939aa1;
+    border:#5f939aa1 1px solid;
     padding:10px 20px;
     border-radius:10px;
     margin-top:20px;
@@ -52,7 +52,7 @@
   }
   
   #showcase .button:hover{
-    background:#926239;
+    background:#5f939a;
     color:#fff;
   }
   

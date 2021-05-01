@@ -5,6 +5,7 @@ let lon = 0;
 let zl = 3; //zoom level
 
 let path = "data/mhp.csv";
+var marker = new L.featureGroup();
 var marker1 = new L.featureGroup();
 var marker2 = new L.featureGroup();
 var marker3 = new L.featureGroup();
@@ -103,8 +104,8 @@ let sa8_poly = L.polygon([
     [33.801199, -118.147270]
     ]);
 
-    let layers = {
-        "Service Area 1": marker1,
+let layers = {
+        "Service Area 1": marker1, 
         "Service Area 2": marker2,
         "Service Area 3": marker3,
         "Service Area 4": marker4,
@@ -113,6 +114,9 @@ let sa8_poly = L.polygon([
         "Service Area 7": marker7,
         "Service Area 8": marker8
          } 
+
+ 
+
 // initialize
 $( document ).ready(function() {
     createMap(lat,lon,zl);
@@ -128,6 +132,8 @@ function createMap(lat,lon,zl){
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 }
+
+
 
 // function to read csv data
 function readCSV(path){
@@ -153,52 +159,52 @@ function readCSV(path){
 	});
 }
 
+
 function mapCSV(SA, poly){
 
     let circleOptions1 = {
-        radius: 3,
-        weight : 1,
-        color : 'white',
-        fillColor: 'white',
+        radius: 1.5,
+        weight : 0.5,
+        color : '#810000',
+        fillColor: '#810000',
         fillOpacity: 1,
     }
-
+    
     // loop through each entry
-    
-    
         csvdata.data.forEach(function(item, index){
-
             
-        
+            
             if (item.SA == SA){
                 poly.addTo(map)
                 poly.bindPopup(`${item.SA}`);
-                poly.setStyle({color: '#ADA3A4', fillColor:'#ADA3A4',fillOpacity: 0.5})
+                poly.setStyle({color: '#ADA3A4', fillColor:'#ADA3A4',fillOpacity: 0.2})
 
                 // create a marker
                 let marker = L.circleMarker([item.latitude,item.longitude], circleOptions1)
                 .on('mouseover',function(){
                     this.bindPopup(`<b><p align = "center">${item.Name} </b></p>  ${item['description']}`).openPopup()
+                    
                 })
+                
 
 
                 // create a function that will do this without repeated code to add a title for each service area
                 if (item.Name == "Residential Program"){
-                    $('.sidebar').append('Service Area 1')}
+                    $('.sidebar').append(`<p align = "center"><u>Service Area 1</p>`)}
                 if (item.Name == "Olive Vista"){
-                    $('.sidebar').append('Service Area 2')}
+                    $('.sidebar').append(`<p align = "center"><u>Service Area 2</p>`)}
                 if (item.Name == "Ingleside Hospital"){
-                    $('.sidebar').append('Service Area 3')}
+                    $('.sidebar').append(`<p align = "center"><u>Service Area 3</p>`)}
                 if (item.Name == "California Hospital Medical Center"){
-                    $('.sidebar').append('Service Area 4')}
-                if (item.Name == "American Health Services"){
-                    $('.sidebar').append('Service Area 5')}
+                    $('.sidebar').append(`<p align = "center"><u>Service Area 4</p>`)}
+                if (item.Name == "American Health Services - El Dorado Community Service Centers - Venice"){
+                    $('.sidebar').append(`<p align = "center"><u>Service Area 5</p>`)}
                 if (item.Name == "Shields For Families Inc - Eden"){
-                    $('.sidebar').append('Service Area 6')}
+                    $('.sidebar').append(`<p align = "center"><u>Service Area 6</p>`)}
                 if (item.Name == "Lakewood Regional Medical Center"){
-                    $('.sidebar').append('Service Area 7')}
+                    $('.sidebar').append(`<p align = "center"><u>Service Area 7</p>`)}
                 if (item.Name == "Long Beach Memorial Medical Center"){
-                    $('.sidebar').append('Service Area 8')}
+                    $('.sidebar').append(`<p align = "center"><u>Service Area 8</p>`)}
                 
 
                             //This is where the error occurs that causes 8 control boxes to be created
@@ -228,13 +234,17 @@ function mapCSV(SA, poly){
                     else if(item.SA == "SA8"){
                             marker8.addLayer(marker).addTo(map);
                             }
+                            
+                            
+                            
                     
-                $('.sidebar').append(`<div class= "SA"> <center><br> ${item.Name} <br></center></div>`)
+                $('.sidebar').append(`<div class= "sidebar-item" 
+                <center> ${item.Name} <br></center></div>`)
                  }
             }   
         )
-        //create the different marker layers
-        
+       
              // append the layers into a control box    
-             map.fitBounds(fg1.getBounds());                
+             map.fitBounds(fg1.getBounds());
+                             
 }
