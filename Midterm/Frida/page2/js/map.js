@@ -3,7 +3,6 @@ let map;
 let lat = 0;
 let lon = 0;
 let zl = 3; //zoom level
-
 let path = "data/mhp.csv";
 var marker = new L.featureGroup();
 var marker1 = new L.featureGroup();
@@ -114,9 +113,6 @@ let layers = {
         "Service Area 7": marker7,
         "Service Area 8": marker8
          } 
-
- 
-
 // initialize
 $( document ).ready(function() {
     createMap(lat,lon,zl);
@@ -132,9 +128,6 @@ function createMap(lat,lon,zl){
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 }
-
-
-
 // function to read csv data
 function readCSV(path){
 	Papa.parse(path, {
@@ -153,20 +146,16 @@ function readCSV(path){
             mapCSV("SA8",sa8_poly);
 
          L.control.layers(null, layers).addTo(map);    
- 
-
 		}
 	});
 }
-
-
 function mapCSV(SA, poly){
 
     let circleOptions1 = {
         radius: 1.5,
         weight : 0.5,
-        color : '#810000',
-        fillColor: '#810000',
+        color : '#046582',
+        fillColor: '#046582',
         fillOpacity: 1,
     }
     
