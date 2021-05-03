@@ -22,7 +22,7 @@ body {
 .header {
 	text-align: center;
 	grid-area: header;
-	background-color: #046582bd;
+	background-color: #046582;
 	color: white;
 	font-size: 3em;
 	padding-top: 1%;
