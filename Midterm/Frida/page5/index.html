@@ -34,61 +34,8 @@ body {
 	overflow-x: hidden;
 	transition: 0.5s;
 	padding-top: 60px;
-	overflow-y: scroll; /* Show vertical scrollbar */
-	overflow-x: scroll; /* Show horizontal scrollbar */
 }
 
-.side a { /* when button opens*/
-  
-  text-decoration: none;
-  font-size: 15px;
-  color: #080808;
-  display: block;
-  transition: 0.3s;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-
-}
-
-.side a:hover {
-  color: #9dad7f;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-}
-
-.side .closebtn {
-  position: absolute;
-  top: 0;
-  right: 50%;
-  font-size: 25px;
-  margin-left: 50px;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-}
-
-.openbtn {
-  font-size: 10px;
-  cursor: default;
-  background-color: #f0e4d7;
-  color: #080808;
-  padding: 1% 5%;
-  border: none;
-  align-items: center;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-}
-
-.openbtn:hover {
-  background-color: #9dad7f;
-  color:#080808;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-}
 
 #main {
   transition: margin-left .5s;
@@ -103,51 +50,34 @@ body {
 </style>
 </head>
 <body>
+<aside>
+  <div id="sidebar-item">
+  <br>
+  <br>
+  <p align = center>
+  <a href="/Midterm/Frida/index.html"  class="button">Home</a>
+  <br>
+  <br>
+  <br>
+  <br></p>
 
-<div id="mySidebar" class="side">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-  <br>
-  <br>
-  <a href="/Midterm/Frida/index.html">Home</a>
+  <p align = center>
+  <a href="/Midterm/Frida/page2/index.html" class="button">Maps</a>
   <br>
   <br>
   <br>
-  <br>
-
- 
-  <a href="/Midterm/Frida/page2/index.html">Maps</a>
-  <br>
+  <br></p>
+  <p align = center>
+  <a href="/Midterm/Frida/page3/index.html" class="button">Infographics and Data Visuals</a>
   <br>
   <br>
   <br>
-
-  <a href="#">Infographics and Data Visuals</a>
-  <br>
-  <br>
-  <br>
-  <br>
- 
-  <a href="#">About us</a>
+  <br></p>
+  <p align = center>
+  <a href="/Midterm/Frida/page4/index.html" class="button">About us</a>
 </p>
 </div>
-
-<div id="main">
-  <button class="openbtn" onclick="openNav()" > ☰ </button> 
-  <div class="sidebar"></div> 
-</div> 
-</div>
-
-<script>
-function openNav() {
-  document.getElementById("mySidebar").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
-}
-
-function closeNav() {
-  document.getElementById("mySidebar").style.width = "0";
-  document.getElementById("main").style.marginLeft= "0";
-}
-</script>
+</aside>
 
 
 </head>
@@ -161,9 +91,9 @@ function closeNav() {
 	
 	
 	<div class="content">
-		<div id="">
+         <div class="boxed">
             <header><h2><p align = "center">Steps to navigate the Service Areas and Mental Health Programs map</h2></header>
-                <br>
+                <br></div>
                 <p align = "center">
                  In the landing page click the "Maps" tab. 
                  <br>
@@ -222,7 +152,7 @@ function closeNav() {
         </div>
 	</div>
 	
-
+</div> 
 	
 
 </body>
