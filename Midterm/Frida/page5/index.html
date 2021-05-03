@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mental Health Crisis and Services in Los Angeles County</title>
+	<meta charset="utf-8" />
+
+	<!-- style sheets -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- leaflet -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+	<!-- jquery -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/papaparse.min.js"></script>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family:  'Gill Sans', sans-serif;
+}
+
+.side {
+	align-items: center;
+	font-size:small;
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #f0e4d7;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 60px;
+	overflow-y: scroll; /* Show vertical scrollbar */
+	overflow-x: scroll; /* Show horizontal scrollbar */
+}
+
+.side a { /* when button opens*/
+  
+  text-decoration: none;
+  font-size: 15px;
+  color: #080808;
+  display: block;
+  transition: 0.3s;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+
+}
+
+.side a:hover {
+  color: #9dad7f;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.side .closebtn {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  font-size: 25px;
+  margin-left: 50px;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.openbtn {
+  font-size: 10px;
+  cursor: default;
+  background-color: #f0e4d7;
+  color: #080808;
+  padding: 1% 5%;
+  border: none;
+  align-items: center;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.openbtn:hover {
+  background-color: #9dad7f;
+  color:#080808;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+#main {
+  transition: margin-left .5s;
+  color:#080808;
+  padding: 16px;
+  overflow-y: scroll; /* Show vertical scrollbar */
+  overflow-x: scroll; /* Show horizontal scrollbar */
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+</style>
+</head>
+<body>
+
+<div id="mySidebar" class="side">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <br>
+  <br>
+  <a href="/Midterm/Frida/index.html">Home</a>
+  <br>
+  <br>
+  <br>
+  <br>
+
+ 
+  <a href="/Midterm/Frida/page2/index.html">Maps</a>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <a href="#">Infographics and Data Visuals</a>
+  <br>
+  <br>
+  <br>
+  <br>
+ 
+  <a href="#">About us</a>
+</p>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()" > ☰ </button> 
+  <div class="sidebar"></div> 
+</div> 
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+
+</head>
+
+<body>
+
+
+	<div class="header"> 
+        <img src="img/logo.png" alt="logo" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mental Health Crisis and Services in Los Angeles County
+	</div>
+	
+	
+	<div class="content">
+		<div id="">
+            <header><h2><p align = "center">Steps to navigate the Service Areas and Mental Health Programs map</h2></header>
+                <br>
+                <p align = "center">
+                 In the landing page click the "Maps" tab. 
+                 <br>
+                 <br>
+                 <img src="img/sc1.png"/></p>
+                 <br>
+                 <br>
+                 <p align = "center">
+                    That button will redirect you to the Service Areas and Mental Health Programs map. 
+                    <br>
+                    <br>
+                    <img src="img/sc2.png"/></p>
+                    <br>
+                    <br>
+                 <p align = "center">
+                    Use the control box in the right side of the map to turn the mental health programs of each service area <br> on/off. 
+                    <br>
+                    <br>
+                    <img src="img/sc3.png"/></p>
+                    <br>
+                    <br>
+                 <p align = "center">
+                    You can zoom in/out using the +/- buttons in the top left side of the map. <br> on/off. 
+                    <br>
+                    <br>
+                    <img src="img/sc4.png"/></p>
+                    <br>
+                    <br>
+                 <p align = "center">
+                    You can select each polygon to get its corresponding service area number. 
+                    <br>
+                    <br>
+                    <img src="img/sc5.png"/></p>
+                    <br>
+                    <br>
+                 <p align = "center">
+                    You can hoover over each blue marker to get more information about each facility.<br>
+                    The sidebar on the left contains a list of all the Mental Health Programs in LA county <br>
+                    by service area. 
+                    <br>
+                    <br>
+                    <img src="img/sc6.png"/></p>
+                    <br>
+                    <br>
+                 <p align = "center">
+                    You can click the ☰ icon to open the main menu. 
+                    <br>
+                    <br>
+                    <img src="img/sc7.png"/></p>
+                    <br>
+                    
+                <p align = "center">
+                    <img src="img/sc8.png"/></p>
+
+
+
+            </p>
+        </div>
+	</div>
+	
+
+	
+
+</body>
+</html>
