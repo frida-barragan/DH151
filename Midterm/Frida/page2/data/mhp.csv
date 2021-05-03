@@ -55,7 +55,7 @@ Personal Growth Institute,SA2,The agency provides mental health services to peop
 Hathaway-Sycamores - Pacoima Mental Health Services,SA2,"The agency provides family support services, foster care, out-of-home care for boys, and mental health services for families in Los Angeles.",34.27865142,-118.4044577
 Ingleside Hospital,SA3,"The hospital provides mental health services for adults, age 18 and older, who live in the Los Angeles County.",34.069723,-118.106481
 San Gabriel Valley Psychological Association,SA3,The association is a professional organization for psychologists whose practices are located in the San Gabriel Valley.,34.142019,-118.092159
-"Eggleston Youth Center, Inc. - Baldwin Park",SA6,The agency provides family preservation for families and individuals of all ages in Los Angeles County.,34.07972269,-117.9891317
+"Eggleston Youth Center, Inc. - Baldwin Park",SA3,The agency provides family preservation for families and individuals of all ages in Los Angeles County.,34.07972269,-117.9891317
 Hathaway-Sycamores - Covina Community Based Mental Health Services,SA3,"The agency provides family support services, foster care, out-of-home care for boys, and mental health services for families in Los Angeles.",34.10518334,-117.8742184
 Alma Family Services - Walnut Office,SA3,The agency provides services for people with developmental disabilities who live in Los Angeles County.,34.027694,-117.892546
 Mental Health Court Program,SA3,,34.10368437,-118.150465
@@ -115,7 +115,7 @@ El Centro Del Pueblo,SA4,"The agency provides child abuse services, HIV/AIDS ser
 View Heights Convalescent Hospital,SA6,The facility provides long-term residential care for mentally disturbed adults age 18 to 64 who need a protective treatment environment before returning to the community.  The locked facility provides 99 beds; the open facility provides 64 beds.  Services are provided by licensed nurses.  It is supported by fees.,33.9183031,-118.2654983
 Dignity Los Angeles,SA3,The agency provides personal enrichment services for people of all ages.,34.113639,-118.181761
 Violence Intervention Program - Community-Based Assessment And Treatment Center,SA4,"The agency provides adult protective services, child abuse services, domestic violence services, health services for foster children, and mental health services for victims of child abuse/neglect, domestic violence, sexual assault, elder abuse and dependent adult abuse in Los Angeles County.",34.05966686,-118.205327
-Eggleston Youth Center Inc,SA4,The agency provides family preservation for families and individuals of all ages in Los Angeles County.,34.00699305,-118.3376524
+Eggleston Youth Center Inc,SA6,The agency provides family preservation for families and individuals of all ages in Los Angeles County.,34.00699305,-118.3376524
 Psychiatric Emergency Services,SA4,,34.06039837,-118.2088059
 Countywide Resource Management,SA4,,34.06665951,-118.215772
 Hiv/co-occurring Disorders Systemwide,SA4,,34.06403028,-118.2914449
@@ -226,7 +226,7 @@ Lakewood Regional Medical Center,SA7,"Lakewood Regional Medical Center is proud 
 Los Angeles County Probation Department - Juvenile Institutions - Residential Treatment Services Bureau,SA7,The bureau provides correctional programs for youth who are wards of the Juvenile Court.,33.916891,-118.132942
 Dorothy Kirby Center Mental Health Unit,SA7,,34.01174,-118.1697416
 American Health Services - El Dorado Community Service Centers - Hawaiian Gardens,SA7,"The agency provides health services, mental health services and substance abuse services for people of all ages who live in the Los Angeles County area.",33.83401,-118.072321
-Project Return Peer Support Network,SA6,The agency provides mental health services for people who have been deinstitutionalized from mental health inpatient and are recovering from mental illness.,33.9970867,-118.14929008
+Project Return Peer Support Network,SA7,The agency provides mental health services for people who have been deinstitutionalized from mental health inpatient and are recovering from mental illness.,33.9970867,-118.14929008
 Los Angeles County Department Of Health Services - Rancho Los Amigos National Rehabilitation Center - Communication Disorders Department,SA7,The clinic provides services for people with disabilities who live in the Los Angeles County area.,33.92909945,-118.1579987
 Low Cost Community Counseling Center,SA7,"The agency provides domestic violence services, mental health services and substance abuse services for children and adults.",33.93446944,-118.0906248
 Pacific Clinics - El Camino,SA7,This is the administrative site of a comprehensive mental health agency that serves people who live in communities in Los Angeles County.,33.94710403,-118.082804
@@ -272,7 +272,7 @@ Childnet Behavioral Health,SA8,The agency provides foster care services and yout
 South Bay Children's Health Center - Child Guidance Clinic,SA8,"The center provides health services, mental health services, and a thrift store for youth and families in the South Bay area.",33.83260874,-118.315949
 Los Angeles County Department Of Mental Health - Long Beach Mental Health Services,SA8,"The center provides employment services, mental health services, and welfare-to-work support services for adults in the Long Beach area.",33.79328386,-118.1899081
 Los Angeles County Department Of Mental Health - San Pedro Mental Health Center,SA8,This center provides mental health services and employment services for adults who live in the South Bay.,33.7379854,-118.2808232
-Inglewood Center - Didi Hirsch,SA8,"The agency provides counseling services; financial assistance for utility bills for Culver City residents for children, families and adults; mental health services; services for older adults; residential mental health services; residential treatment for substance abuse; substance abuse services; and welfare-to-work support services for people of all ages in Los Angeles County.",33.96628249,-118.3443027
+Inglewood Center - Didi Hirsch,SA6,"The agency provides counseling services; financial assistance for utility bills for Culver City residents for children, families and adults; mental health services; services for older adults; residential mental health services; residential treatment for substance abuse; substance abuse services; and welfare-to-work support services for people of all ages in Los Angeles County.",33.96628249,-118.3443027
 Harbor Community Clinic,SA8,The agency provides counseling services and health services for people of all ages in the Harbor area.,33.73865181,-118.2898332
 Autism Society Of America - Greater Long Beach / San Gabriel Valley Chapter,SA8,The organization provides services for people with disabilities related to Autism Spectrum Disorder.,33.793472,-118.121691
 Los Angeles County Department Of Mental Health - Long Beach Child And Adolescent Program,SA8,"The agency provides outpatient mental health services to youth, age 18 and younger, who live in Long Beach.",33.79328386,-118.1899081
