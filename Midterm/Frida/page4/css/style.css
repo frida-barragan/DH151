@@ -13,7 +13,7 @@ body {
 	grid-template-areas: 
 	"header header"
 	"sidebar content"
-	"footer footer";
+
 }
 
 .header {
@@ -65,19 +65,16 @@ body {
 	line-height:1.3;
 }
 
-.footer {
-	grid-area: footer;
-	padding:10px;
-	background-color: rgb(175, 175, 175);
-}
+
 .content img {  
 	float: inline-end;
-	width: 25%;
-	height: 55%;
+	width: 35%;
+	height: 40%;
 	background: #046582bd;
 	justify-content:center;
     align-items:center;
-    text-align:middle;
+    text-align:center;
+	align-content: center;
 }
 .button{
 	font-size:small;
@@ -121,5 +118,7 @@ aside
     text-align:middle;
 	background-color: #9dad7f8c;
   }
-  
+ .con {
+	column-count: 2;
+  }
 

@@ -1,34 +1,169 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Service Planning Areas</title>
-    
+	<title>Infographics and Data Visuals</title>
+	<meta charset="utf-8" />
+
+	<!-- style sheets -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- leaflet -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+	<!-- jquery -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/papaparse.min.js"></script>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family:  'Gill Sans', sans-serif;
+}
+
+.side {
+	align-items: center;
+	font-size:small;
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #f0e4d7;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 60px;
+}
+
+
+#main {
+  transition: margin-left .5s;
+  color:#080808;
+  padding: 16px;
+  overflow-y: scroll; /* Show vertical scrollbar */
+  overflow-x: scroll; /* Show horizontal scrollbar */
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+</style>
+</head>
+<body>
+<aside>
+  <div id="sidebar-item">
+  <br>
+  <br>
+  <p align = center>
+  <a href="/Midterm/Frida/index.html"  class="button">Home</a>
+  <br>
+  <br>
+  <br>
+  <br></p>
+
+  <p align = center>
+  <a href="/Midterm/Frida/page2/index.html" class="button">Maps</a>
+  <br>
+  <br>
+  <br>
+  <br></p>
+  <p align = center>
+ <a href="/Midterm/Frida/page5/index.html" class="button">How do I navigate the map?</a>
+  <br>
+  <br>
+  <br>
+  <br></p>
+  <p align = center>
+  <a href="/Midterm/Frida/page3/index.html" class="button">Infographics and Data Visuals </a>
+  <br>
+  <br>
+  <br>
+  <br></p>
+  <p align = center>
+  <a href="/Midterm/Frida/page4/index.html" class="button">About us</a>
+  <br>
+  <br>
+  <br>
+  <br>
+  <img src="img/tenor.gif" alt="logo" width = 75% height=25%/>
+</p>
+</div>
+</aside>
+
+
 </head>
 
 <body>
-    <header id="showcase">
-        <h1>Service Planning Areas</h1>
-        <br>
-        <p align="center">
-            <img src= "img/SA Populations.png"  width="800px">
-        </p>
-    </header>
-    
-    <p align="center">
-        <img src= "img/Programs by SA.png" width="500px">
-        <br>
-        <br>
-        <img src= "img/chart#3" width=500px>
-        <br>
-        <br>
-        <img src= "img/chart#4" width=500px>
-        <br>
-        <br>
-    <a href="https://frida-barragan.github.io/DH151/Midterm/Frida/" class="button">Homepage</a>  
-    </p>
+
+
+	<div class="header"> 
+        <img src="img/logo.png" alt="logo" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mental Health Crisis and Services in Los Angeles County
+	</div>
+	
+	
+	<div class="content">
+         <div class="boxed">
+            <header><h2><p align = "center">Infographics and Population Data Visuals</h2></header>
+                <br></div>
+                <p align = "center">
+                    <br>
+                    <br>
+                    <img src="img/1.png"/></p>
+                    <br>
+                    <p align = "center"><b>Figure 1. </b>Comparing the list of population sizes (next to the map) with this graph of programs, 
+                    <br>one can see that the number of programs in each service area do not necessarily 
+                    <br>correspond with the populations of each service area. For example, SPA 2-San Fernando 
+                    <br>has the largest population but only the third-most services. SPA 6-South is only 
+                    <br>slightly smaller than SPA 4-Metro, yet the number of services in the former are 
+                    <br>significantly less than in the latter. Of course, need is not just measured by 
+                    <br>population size, so we turned to more demographic information to investigate the 
+                    <br>discrepancies.</p>
+                    <br>
+                 <p align = "center">
+                    <br>
+                    <br>
+                    <img src="img/2.png"/></p>
+                    <br>
+                    <p align = "center"><b>Figure 2. </b>Another crucial factor is race of residents, as BIPOC communities are historically underresourced. <br> 
+                        SPA-6 has the highest population of Black people and second highest population of Latinx people, <br>
+                        speaking to the racism that structures disadvantages and exacerbates mental health issues by through <br>
+                        the psychological and emotional tolls it can take on BIPOC people. Meanwhile, an area like SPA-2, which has <br>
+                        the second highest white population has one of the highest numbers of programs. <br>
+                        Further analysis can go into more depth about each service area, but there are clearly <br>
+                        identified gaps between needs and services, geographically and demographically, that are already <br>
+                        issues to be addressed.
+                    <br>
+                <p align = "center"> 
+                    <br>
+                    <br>
+                    <img src="img/3.jpg"/></p>
+                    <br>
+                    <p align = "center"><b>Figure 3. </b>These graphs show the percentages of residents who are below the federal poverty line and who are uninsured, <br>
+                        both demographic factors that affect accessibility to mental care. Unsurprisingly, SPA-6 has the highest percentages in these <br>
+                        categories, showing that an extreme need for services is inaccessible both geographically and financially. <br>
+                <p align = "center">
+                    <br>
+                    <br>
+                    <img src="img/4.png"/></p>
+                    
+                    <p align = "center"><b>Figure 4. </b>The first chart includes people at serious risk of depression, of which SPA6 has the highest percentage. <br>
+                    This alone indicates a huge discrepancy between the number of mental health programs in SPA6 <br>
+                    and its need for programs and services. One of the reasons for this discrepancy might be indicated in <br>
+                    the second graph, which shows how residents of SPA6 have some of the lowest numbers of depression diagnosis. <br> 
+                    Under-diagnosis of depression could be due to many factors, including people's inaccessibility to care or counseling <br>
+                    such that they might recieve an official diagnosis in the first place. Of course, there are areas such as SPA 1-Antelope Valley <br>
+                    that have both high risk of depression and high current rates, but, like with SPA-6 South, there is a serious lack of <br>
+                    services in this area. Inaccessibility brings up additional disadvantages due to structural racism and inequality.
+                
+
+
+
+            </p>
+        </div>
+	</div>
+	
+</div> 
+	
+
 </body>
 </html>
