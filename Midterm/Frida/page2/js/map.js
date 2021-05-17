@@ -150,7 +150,6 @@ function readCSV(path){
 	});
 }
 function mapCSV(SA, poly){
-
     let circleOptions1 = {
         radius: 1.5,
         weight : 0.5,

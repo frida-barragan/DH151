@@ -1,0 +1,316 @@
+category_code,category_name,service_code,service_name,service_description,sa_code,mh_code,both_code 
+TC,Type of Care,SA,Substance use treatment,"Refers to a broad range of activities or services, including identification of the problem (and engaging the individual in treatment); brief interventions; assessment of substance abuse and related problems including histories of various types of abuse; diagnosis of the problem(s); and treatment planning, including counseling, medical services, psychiatric services, psychological services, social services and follow-up for persons with alcohol or other drug problems (Institute of Medicine, 1990).",Y,N,N
+TC,Type of Care,DT,Detoxification  ,Treatment given to people who are addicted to drugs or alcohol in order to stop them from being addicted.,Y,N,N
+TC,Type of Care,HH,"Transitional housing, halfway house, or sober home","Housing for individuals recovering from substance abuse that is designed to provide a drug and alcohol-free living environment and appropriate support services to facilitate movement to independent living. Such housing includes transitional living, sober houses, sober living, recovery houses, and 3/4 houses.",Y,N,N
+TC,Type of Care,MH,Mental health treatment    ,"Includes interventions such as therapy or psychotropic medication that treat a person's mental health problem or condition, reduce symptoms, and improve behavioral functioning and outcomes. ",N,Y,N
+TC,Type of Care,SUMH,Treatment for co-occurring serious mental health illness/serious emotional disturbance and substance use disorders,"Housing for individuals recovering from substance abuse that is designed to provide a drug and alcohol-free living environment and appropriate support services to facilitate movement to independent living. Such housing includes transitional living, sober houses, sober living, recovery houses, and 3/4 houses.",Y,Y,Y
+FOP,"Facility Operation (e.g., Private, Public)",DDF,Department of Defense,Responsible for providing the military forces needed to deter war and protect the security of our country.,Y,N,N
+FOP,"Facility Operation (e.g., Private, Public)",IH,Indian Health Service,,Y,Y,Y
+FOP,"Facility Operation (e.g., Private, Public)",LCCG,"Local, county, or community government",,Y,N,N
+FOP,"Facility Operation (e.g., Private, Public)",LMG,"Regional/district or county, local, or municipal government",Represented by elected officials who exercise the powers and perform the obligations of the local government with input from staff and citizens.,N,Y,N
+FOP,"Facility Operation (e.g., Private, Public)",OSG,Other state government agency/department,"Any authority, board, department, instrumentality, institution, agency, or other unit of state government. """"State agency"""" shall not include any county, city, or town.",N,Y,N
+FOP,"Facility Operation (e.g., Private, Public)",PVTP,Private for-profit organization,A business or other organization whose primary goal is making money (a profit).,Y,Y,Y
+FOP,"Facility Operation (e.g., Private, Public)",PVTN,Private non-profit organization,A charitable organization that does not qualify as a public charity.,Y,Y,Y
+FOP,"Facility Operation (e.g., Private, Public)",SMA,State mental health authority,,N,Y,N
+FOP,"Facility Operation (e.g., Private, Public)",STG,State government,"Government of a country subdivision in a federal form of government, which shares political power with the federal or national government and must meet certain standards set by the federal government, but are free to expand beyond what exists at the federal level and improve services, access, and protections for consumers, such as mental health and substance abuse services, in that state.",Y,N,N
+FOP,"Facility Operation (e.g., Private, Public)",TBG,Tribal government,A governing body of a group of Native American Indians or Alaska Natives that qualifies as an Indian tribal government determined by the Internal Revenue Services.,Y,Y,Y
+FOP,"Facility Operation (e.g., Private, Public)",VAMC,U.S. Department of Veterans Affairs,"Facility operated by the U.S. Department of Veterans Affairs, including general hospitals, and/or residential treatment programs, and/or psychiatric out­patient clinics.",Y,Y,Y
+LCA,License/Certification/Accreditation,STAG,State Substance Abuse agency,"Government organization responsible for planning, organizing, delivering, and monitoring substance use disorder services in their respective state.",Y,N,N
+LCA,License/Certification/Accreditation,STMH,State mental health department,"Government organization responsible for planning, organizing, delivering, and monitoring critical mental health services in their respective state.",Y,N,N
+LCA,License/Certification/Accreditation,STDH,State department of health,,Y,N,N
+LCA,License/Certification/Accreditation,CARF,Commission on Accreditation of Rehabilitation Facilities,An independent non-profit accreditor of health and human services.,Y,N,N
+LCA,License/Certification/Accreditation,COA,Council on Accreditation ,"Partners with human service organizations worldwide to improve service delivery outcomes by developing, applying and promoting accreditation standards.",Y,N,N
+LCA,License/Certification/Accreditation,HFAP,Healthcare Facilities Accreditation Program ,,Y,N,N
+LCA,License/Certification/Accreditation,HLA,Hospital licensing authority,,Y,N,N
+LCA,License/Certification/Accreditation,JC,The Joint Commission,"An independent, not-for-profit group in the United States that administers voluntary accreditation programs for hospitals and other healthcare organizations.",Y,N,N
+LCA,License/Certification/Accreditation,NCQA,National Committee for Quality Assurance ,"Independent 501(c)(3) nonprofit organization in the United States that works to improve health care quality through the administration of evidence-based standards, measures, programs, and accreditation.",Y,N,N
+LCA,License/Certification/Accreditation,FQHC,Federally Qualified Health Center,"An entity may qualify as a FQHC if it meets one of these requirements (CMS, 2017): Is receiving a grant under Section 330 of the Public Health Service (PHS) Act or is receiving funding from such a grant and meets other requirements; Is not receiving a grant under Section 330 of the PHS Act, but is determined by the Secretary of the Department of Health and Human Services (HHS) to meet the requirements for receiving such a grant (i.e., qualifies as a FQHC ""look-alike"") based on the recommendation of the Health Resources and Services Administration (HRSA); Was treated by the Secretary of the Department of HHS for purposes of Medicare Part B as a comprehensive Federally-funded health center as of January 1, 1990; Is operating as an outpatient health program or facility of a tribe or tribal organization under the Indian Self-Determination Act or as an urban Indian organization receiving funds under Title V of the Indian Health Care Improvement Act as of October 1, 1991.",Y,Y,Y
+PAY,Payment/Insurance/Funding Accepted,CLF,County or local government funds,,N,Y,N
+PAY,Payment/Insurance/Funding Accepted,CMHG,Community Mental Health Block Grants,"Through individual block grant contracts with community mental health services programs, these resources are focused on development and maintenance of community based services.",N,Y,N
+PAY,Payment/Insurance/Funding Accepted,CSBG,Community Service Block Grants,Provides funds to alleviate the causes and conditions of poverty in communities.,N,Y,N
+PAY,Payment/Insurance/Funding Accepted,FG,Federal Grants,,N,Y,N
+PAY,Payment/Insurance/Funding Accepted,FSA,"Federal, or any government funding for substance use programs","Financial assistance provided by the federal, state, or local government for substance use treatment.",Y,N,N
+PAY,Payment/Insurance/Funding Accepted,ITU,IHS/Tribal/Urban (ITU) funds,"Direct funds from the Indian Health Service. They consist of tribal funds through ""638 contracts"" (named after the public law under which they were authorized) and/or urban funds through federal Title 5 grants. These funds are considered part of the India health care system and can be used for programs that provide behavioral health services as well as for programs that provide other health-related services.",Y,Y,Y
+PAY,Payment/Insurance/Funding Accepted,MC,Medicare,The federal health insurance program for people age 65 and older and people with disabilities.,Y,Y,Y
+PAY,Payment/Insurance/Funding Accepted,MD,Medicaid,A joint federal and state program that helps with medical costs for some people with low incomes and limited resources. Medicaid programs vary from state to state.,Y,Y,Y
+PAY,Payment/Insurance/Funding Accepted,MI,"Military insurance (e.g., TRICARE)",,Y,Y,Y
+PAY,Payment/Insurance/Funding Accepted,NP,No payment accepted,,Y,N,N
+PAY,Payment/Insurance/Funding Accepted,OSF,Other State funds,,N,Y,N
+PAY,Payment/Insurance/Funding Accepted,PI,Private health insurance,,Y,Y,Y
+PAY,Payment/Insurance/Funding Accepted,PCF,Private or Community foundation,,N,Y,N
+PAY,Payment/Insurance/Funding Accepted,SCJJ,State corrections or juvenile justice funds,,N,Y,N
+PAY,Payment/Insurance/Funding Accepted,SEF,State education agency funds,,N,Y,N
+PAY,Payment/Insurance/Funding Accepted,SF,Cash or self-payment,"Payment for treatment is made by the person directly, through cash or other means, rather than using health insurance.",Y,Y,Y
+PAY,Payment/Insurance/Funding Accepted,SI,State-financed health insurance plan other than Medicaid,,Y,Y,Y
+PAY,Payment/Insurance/Funding Accepted,SMHA,State mental health agency (or equivalent) funds,Funds designed to finance the cost of treatment for mental health conditions.,N,Y,N
+PAY,Payment/Insurance/Funding Accepted,SWFS,State welfare or child and family services funds,,N,Y,N
+PAY,Payment/Insurance/Funding Accepted,VAF,U.S. Department of VA funds,,N,Y,N
+PYAS,Payment Assistance Available,PA,Payment assistance (check with facility for details),"A program which helps low-income, uninsured, or underinsured patients who need help paying for all or part of their medical bills.",Y,Y,Y
+PYAS,Payment Assistance Available,SS,Sliding fee scale (fee is based on income and other factors),Variable prices for services based on a person’s ability to pay.,Y,Y,Y
+SG,Special Programs/Groups Offered,AD,Adolescents,Facility has a program or group specifically tailored for Adolescents.,Y,Y,Y
+SG,Special Programs/Groups Offered,TAY,Transitional age young adults,Facility has a program or group specifically tailored for Transitional age young adults.,Y,Y,Y
+SG,Special Programs/Groups Offered,WN,Adult women,Facility has a program or group specifically tailored for adult women.,Y,N,N
+SG,Special Programs/Groups Offered,PW,Pregnant/postpartum women,Facility has a program or group specifically tailored for Pregnant/postpartum women.,Y,N,N
+SG,Special Programs/Groups Offered,MN,Adult men,Facility has a program or group specifically tailored for adult men.,Y,N,N
+SG,Special Programs/Groups Offered,SE,Seniors or older adults,Facility has a program or group specifically tailored for Seniors or older adults.,Y,Y,Y
+SG,Special Programs/Groups Offered,GL,"Lesbian, gay, bisexual, transgender, or queer/questioning (LGBTQ) clients",Facility has a program or group specifically tailored for LGBT clients.,Y,Y,Y
+SG,Special Programs/Groups Offered,VET,Veterans,Facility has a program or group specifically tailored for Veterans.,Y,Y,Y
+SG,Special Programs/Groups Offered,ADM,Active duty military,Facility has a program or group specifically tailored for active duty military persons. ,Y,Y,Y
+SG,Special Programs/Groups Offered,MF,Military families,Facility has a program or group specifically tailored for Military families. ,Y,Y,Y
+SG,Special Programs/Groups Offered,CJ,Clients referred from the court/judicial system ,Facility has a program or group specifically tailored for clients referred from the court/judicial system. ,Y,Y,Y
+SG,Special Programs/Groups Offered,CO,Persons with co-occurring mental and substance use disorders,Facility has a program or group specifically tailored for persons with co-occurring mental and substance abuse disorders.,Y,Y,Y
+SG,Special Programs/Groups Offered,COPSU,Persons with co-occurring pain and substance use,,Y,N,N
+SG,Special Programs/Groups Offered,HV,Persons with HIV or AIDS,Facility has a program or group specifically tailored for persons with HIV or AIDS.,Y,Y,Y
+SG,Special Programs/Groups Offered,XA,Persons who have experienced sexual abuse,Facility has a program or group specifically tailored for persons who have experienced sexual abuse.,Y,N,N
+SG,Special Programs/Groups Offered,DV,"Persons who have experienced intimate partner violence, domestic violence","Facility has a program or group specifically tailored for persons who have experienced intimate partner violence, domestic violence. ",Y,Y,Y
+SG,Special Programs/Groups Offered,TRMA,Persons who have experienced trauma,Facility has a program or group specifically tailored for persons who have experienced trauma.,Y,Y,Y
+SG,Special Programs/Groups Offered,TBI,Persons with traumatic brain injury (TBI),Facility has a program or group specifically tailored for persons with traumatic brain injury.,N,Y,N
+SG,Special Programs/Groups Offered,ALZ,Persons with Alzheimer's or dementia,Facility has a program or group specifically tailored for persons with Alzheimer's or dementia.,N,Y,N
+SG,Special Programs/Groups Offered,PED,Persons with eating disorders,Facility has a program or group specifically tailored for persons with eating disorders.,N,Y,N
+SG,Special Programs/Groups Offered,PEFP,Persons experiencing first-episode psychosis,Facility has a program or group specifically tailored for persons with eating disorders.,N,Y,N
+SG,Special Programs/Groups Offered,PTSD,Persons with post-traumatic stress disorder (PTSD),Facility has a program or group specifically tailored for persons with post-traumatic stress disorder.,N,Y,N
+SG,Special Programs/Groups Offered,SED,Children/adolescents with serious emotional disturbance (SED),Facility has a program or group specifically tailored for children/adolescents with serious emotional disturbance.,N,Y,N
+SG,Special Programs/Groups Offered,SMI,Persons with serious mental illness (SMI),Facility has a program or group specifically tailored for persons with serious mental illness.,N,Y,N
+TM,Telemedicine,TELE,Telemedicine/telehealth,"The ability for healthcare providers, working from a distance using telecommunications technology, to communicate with patients, diagnose conditions, provide treatment, and discuss healthcare issues with other providers to ensure quality healthcare services are provided. Other names used for this treatment approach are: e-medicine, e-therapy, e-psychiatry, and telepsychiatry.",Y,Y,Y
+ASSES,Assessment/Pre-treatment,CMHA,Comprehensive mental health assessment,"An examination used to ascertain whether or not a patient is functioning on a healthy psychological, social, or developmental level. It can also be used to aid diagnosis of some neurological disorders, specific diseases, or possible drug abuse.",Y,N,N
+ASSES,Assessment/Pre-treatment,CSAA,Comprehensive substance use assessment,,Y,N,N
+ASSES,Assessment/Pre-treatment,ISC,Interim services for clients,,Y,N,N
+ASSES,Assessment/Pre-treatment,OPC,Outreach to persons in the community,,Y,N,N
+SCR,Screening & Testing,BABA,Breathalyzer or blood alcohol testing,A device for estimating blood alcohol content (BAC) from a breath sample. ,Y,N,N
+SCR,Screening & Testing,DAOF,Drug and alcohol oral fluid testing,,Y,N,N
+SCR,Screening & Testing,DAUT,Drug or alcohol urine screening,Analyzes your urine for the presence of certain illegal drugs and prescription medications.,Y,N,N
+SCR,Screening & Testing,HIVT,HIV testing,"Determines whether you are infected with HIV, a virus that weakens the immune system and can lead to acquired immunodeficiency syndrome. ",Y,Y,Y
+SCR,Screening & Testing,SHB,Screening for Hepatitis B,Involves blood test that measure HBV (Hepatitis B virus)  antigens and antibodies.,Y,Y,Y
+SCR,Screening & Testing,SHC,Screening for Hepatitis C,"Test for Hepatitis C, which is usually done and recommended for persons currently injecting drugs,
+ever injected drugs, were prior recipients of transfusions or organ transplants, or have certain medical conditions, including persons:
+1. who received clotting factor concentrates produced before 1987
+2. who were ever on long-term hemodialysis
+3. with persistently abnormal alanine aminotransferase levels (ALT)
+4. who have HIV infection",Y,Y,Y
+SCR,Screening & Testing,SMHD,Screening for mental disorders,Test to determine whether a person is experiencing symptoms of mental health conditions and needs treatment.,Y,N,N
+SCR,Screening & Testing,SSA,Screening for substance use,Test to determine whether a person is experiencing symptoms of substance use and needs treatment.,Y,N,N
+SCR,Screening & Testing,STDT,STD testing,Testing to determine the type of sexually transmitted disease a person may be carrying.,Y,Y,Y
+SCR,Screening & Testing,TBS,TB screening,Skin tests that are used to screen people who are at high risk for TB exposure such as people with diseases or conditions that weaken their immune system. ,Y,Y,Y
+SCR,Screening & Testing,MST,Testing for metabolic syndrome,,Y,N,N
+TRSRV,Transitional Services,ACC,Aftercare/continuing care,,Y,N,N
+TRSRV,Transitional Services,DP,Discharge Planning,A process that aims to improve the coordination of services after discharge from the hospital by considering the patient’s needs in the community.,Y,N,N
+TRSRV,Transitional Services,NOE,Naloxone and overdose education,,Y,N,N
+TRSRV,Transitional Services,OFD,Outcome follow-up after discharge,,Y,N,N
+AS,Ancillary Services,ACT,Assertive community treatment,"A multi-disciplinary clinical team approach, helps those with serious mental illness live in the community by providing 24-hour intensive community services in the individual's natural setting.",N,Y,N
+AS,Ancillary Services,AOT,Assisted Outpatient Treatment,"A multi-disciplinary clinical team approach, helps those with serious mental illness live in the community by providing 24-hour intensive community services in the individual's natural setting.",N,Y,N
+AS,Ancillary Services,CDM,Chronic disease/illness management,"A systematic approach to improving health care for people with chronic disease. Central to most CDM approaches are patient self-management, physician education, and organizational support. Among the variety of strategies employed are case management, continuous quality improvement, disease management (DM) and the chronic care model (CCM).",N,Y,N
+AS,Ancillary Services,ACU,Acupuncture,"An alternative medicine treatment option that relies on stimulating various points on the body, most often with needles, to relieve pain or treat other physical, mental and emotional conditions.",Y,N,N
+AS,Ancillary Services,AOSS,Assistance with obtaining social services,"Assistance obtaining government services provided for the benefit of the community designed to promote social well being (i.e. education, medical care, housing, etc.).",Y,N,N
+AS,Ancillary Services,BC,Residential beds for clients' children,A residential treatment program that offers beds for children while their parents are in treatment.,Y,N,N
+AS,Ancillary Services,CCC,Child care for clients' children,A treatment program that offers child care for children while their parents are in treatment.,Y,N,N
+AS,Ancillary Services,CM,Case management,"Helps people arrange for appropriate services and supports through a case manager who monitors the needs of clients/patients and their families and coordinates services, such as mental health, social work, health, educational, vocational, recreational, transportation, advocacy, and respite care, as needed.",Y,Y,Y
+AS,Ancillary Services,COOT,Court-ordered outpatient treatment,"Known by different terms in different states, such as, “assisted outpatient treatment (AOT),” “involuntary outpatient treatment,” or “mandatory outpatient treatment.” Forty-four states permit the use of court-ordered outpatient treatment as a condition for persons with severe mental illness, who are too ill to seek care voluntarily, to remain in their community. Each state has its own civil commitment laws that establish criteria for determining when court-ordered treatment is appropriate for these individuals. (https://www.crimesolutions.gov/ProgramDetails.aspx?ID=228)",N,Y,N
+AS,Ancillary Services,DEC,Diet and exercise counseling,"Provides guidance (information) and/or assistance (skills training, resources) to persons that emphasizes the connection between physical and mental health. Diet and exercise counseling helps a person learn to make decisions about: (1) good nutrition and healthy eating practices and food choices for health improvement and/or weight management; and (2) choosing physical activities to increase overall health and fitness, with a focus on helping persons reduce their risk for chronic disease and support their recovery.",N,Y,N
+AS,Ancillary Services,DVFP,Domestic violence services—family or partner,Provide safety assistance to victims of domestic violence.,Y,N,N
+AS,Ancillary Services,EIH,Early intervention for HIV,"Early detection and treatment of HIV, which can help prevent the onset of AIDS and other opportunistic infections. ",Y,N,N
+AS,Ancillary Services,ES,Education services,"Locate or provide educational services from basic literacy through a general equivalency diploma and college courses including special education at the pre-primary, primary, secondary, and adult levels. ",N,Y,N
+AS,Ancillary Services,FPSY,Family psychoeducation,"Helps consumers and their families and supporters, through relationship building, education, collaboration, and problem solving to: 1) learn about mental illness; 2) master new ways of managing their mental illness; 3) reduce tension and stress within the family; 4) provide social support and encouragement to each other; 5) focus on the future; and 6) find ways for families and supporters to help consumers in their recovery.",N,Y,N
+AS,Ancillary Services,HS,Housing services,Are designed to assist individuals with finding and maintaining appropriate housing arrangements. ,Y,Y,Y
+AS,Ancillary Services,MHS,Mental health services,"Assessment, diagnosis, treatment or counseling in a professional relationship to assist an individual or group in alleviating mental or emotional illness, symptoms, conditions or disorders.",Y,N,N
+AS,Ancillary Services,ICM,Intensive case management,"An intensive service that is a key part of the continuum of mental health care and supports for persons with serious mental illness. ICM is more than a brokerage function. It involves building a caring, trusting relationship with the consumer, promoting consumer independence through the coordination of appropriate services, and providing on-going, long-term support as needed by the consumer to function in the least restrictive, most natural environment and achieve an improved quality of life. ICM evolved from assertive community treatment (ACT) and case management (CM). ICM emphasizes frequent contact, small caseloads (<20 cases) and high intensity of care designed to improve planning for and responsiveness to the consumer's multiple service needs. The case manager coordinates required services from across the mental health system as well as other service systems (e.g., criminal justice, social services) as the consumer's service needs change. Intensive case managers fulfill a vital function for consumers by working with them to realize personal recovery goals and providing the support and resources that the consumer needs to achieve goals, stabilize his/her life and improve his/her quality of life.",N,Y,N
+AS,Ancillary Services,IMR,Illness management and recovery,"Uses a standardized individual or group format based on five evidence-based practices: 1) Psychoeducation, 2) Behavioral tailoring, 3) Relapse prevention training, 4) Coping skills training, and 5) Social skills training.",N,Y,N
+AS,Ancillary Services,IPC,Integrated primary care services,"Address the general health care needs of persons with mental health and substance use problems. These general health care needs include the prevention and treatment of chronic illnesses (e.g., hypertension, diabetes, obesity, and cardiovascular disease) that can be aggravated by poor health habits such as inadequate physical activity, poor nutrition, and smoking. The services include screening, coordinating care among behavioral health care staff and medical staff; and providing linkages to ensure that all patient needs are met in order to promote wellness and produce the best outcomes.",N,Y,N
+AS,Ancillary Services,LAD,Legal advocacy,Refers to legal services provided to help protect and maintain a client/patient's legal rights.,N,Y,N
+AS,Ancillary Services,PEER,Mentoring/peer support/consumer-run services,,Y,Y,Y
+AS,Ancillary Services,PRS,Psychosocial rehabilitation services,"Offered individually or in groups, provide therapeutic or intervention services such as daily and community-living skills, self-care and skills training (grooming, bodily care, feeding, social skills training, and basic language skills). ",N,Y,N
+AS,Ancillary Services,RC,Recovery coach,"Are provided by mental health consumers and include mental health treatment or support services, such as social clubs, peer-support groups, and other peer-organized or consumer-run activities (e.g., consumer satisfaction evaluations of mental health treatment).",Y,N,N
+AS,Ancillary Services,SEMP,Supported employment,"Services include assisting individuals with finding work; assessing individuals' skills, attitudes, behaviors, and interest relevant to work; providing vocational rehabilitation and/or other training; and providing work opportunities.",N,Y,N
+AS,Ancillary Services,SH,Supported housing,"Independent, normal housing with flexible, individualized supportive services that allow individuals to maintain as much independence as possible. ",N,Y,N
+AS,Ancillary Services,SHG,Self-help groups,"Groups in which members share the same issue, condition, or situation and thus are in a position to provide help and support to each other.",Y,N,N
+AS,Ancillary Services,SSD,Social skills development,,Y,N,N
+AS,Ancillary Services,SPS,Suicide prevention services,"Include identifying risk factors; educating staff on identifying the signs of suicidal behavior and using methods to detect risk; and the assessment, intervention, and management of suicidal patients including treatment of an underlying mental or substance use disorder, and use of psychotropic medication, supportive services, and education. Hotlines help individuals to contact the nearest suicide prevention mental health provider.",N,Y,N
+AS,Ancillary Services,TA,Transportation assistance,,Y,N,N
+AS,Ancillary Services,TPC,Therapeutic foster care,"Provides treatment for children within the private homes of trained families. The approach combines the normalizing influence of family-based care with specialized treatment interventions, thereby creating a therapeutic environment in a nurturing family home.",N,Y,N
+AS,Ancillary Services,VRS,Vocational rehabilitation services,"Include job finding/development; assessment and enhancement of work-related skills (such as writing a resume or taking part in an interview), attitudes, and behaviors; as well as providing job experiences to clients/patients. Transitional employment is also included. ",N,Y,N
+AS,Ancillary Services,PIEC,Professional interventionist/educational consultant,,Y,N,N
+OTHR,Other Addictions,ADD,Treatment for non-substance use addiction disorder,"Treatment for behavioral addictions or process addictions and occur when a person is dependent upon a specific behavior (i.e. gambling addiction, compulsive shopping disorder, etc.).",Y,N,N
+OTHR,Other Addictions,TGD,Treatment for gambling disorder,,Y,N,N
+OTHR,Other Addictions,TID,Treatment for internet use disorder,,Y,N,N
+SET,"Service Settings (e.g., Outpatient, Residential, Inpatient, etc.)",HI,Hospital inpatient ,Medical treatment that is provided in a hospital or other facility and requires at least one overnight stay. ,Y,Y,Y
+SET,"Service Settings (e.g., Outpatient, Residential, Inpatient, etc.)",OP,Outpatient ,Describes patients who receive treatment services without an overnight stay at a treatment facility or hospital.,Y,Y,Y
+SET,"Service Settings (e.g., Outpatient, Residential, Inpatient, etc.)",PHDT,Partial hospitalization/day treatment ,"Offer outpatient treatment services, such as group counseling, individual therapy, and access to medical care, if needed. It is best for people who do not require 24-hour supervision, but who would still benefit from a high level of support.",N,Y,N
+SET,"Service Settings (e.g., Outpatient, Residential, Inpatient, etc.)",RES,Residential,,Y,Y,Y
+SET,"Service Settings (e.g., Outpatient, Residential, Inpatient, etc.)",HID,Hospital inpatient detoxification,,Y,N,N
+SET,"Service Settings (e.g., Outpatient, Residential, Inpatient, etc.)",HIT,Hospital inpatient treatment,,Y,N,N
+SET,"Service Settings (e.g., Outpatient, Residential, Inpatient, etc.)",OD,Outpatient detoxification,,Y,N,N
+SET,"Service Settings (e.g., Outpatient, Residential, Inpatient, etc.)",ODT,Outpatient day treatment or partial hospitalization,,Y,N,N
+SET,"Service Settings (e.g., Outpatient, Residential, Inpatient, etc.)",OIT,Intensive outpatient treatment,,Y,N,N
+SET,"Service Settings (e.g., Outpatient, Residential, Inpatient, etc.)",OMB,Outpatient methadone/buprenorphine or naltrexone treatment,,Y,N,N
+SET,"Service Settings (e.g., Outpatient, Residential, Inpatient, etc.)",ORT,Regular outpatient treatment,,Y,N,N
+SET,"Service Settings (e.g., Outpatient, Residential, Inpatient, etc.)",RD,Residential detoxification,,Y,N,N
+SET,"Service Settings (e.g., Outpatient, Residential, Inpatient, etc.)",RL,Long-term residential,,Y,N,N
+SET,"Service Settings (e.g., Outpatient, Residential, Inpatient, etc.)",RS,Short-term residential,,Y,N,N
+DETOX,Detoxification,ADTX,Alcohol Detoxification,,Y,N,N
+DETOX,Detoxification,BDTX,Benzodiazepines Detoxification,"Used to help patients safely and successfully purge their bodies of Benzodiazepines, or Benzos, so that they can proceed to the next stage of addiction treatment.",Y,N,N
+DETOX,Detoxification,CDTX,Cocaine Detoxification,,Y,N,N
+DETOX,Detoxification,ODTX,Opioid Detoxification,,Y,N,N
+DETOX,Detoxification,MDTX,Methamphetamines detoxification,,Y,N,N
+DETOX,Detoxification,MDET,Routinely uses medication for detoxification,,Y,N,N
+EDU,Counseling Services and Education,ICO,Individual counseling,"Process through which clients work one-on-one with a trained mental health clinician in a safe, caring, and confidential environment.",Y,N,N
+EDU,Counseling Services and Education,GCO,Group counseling,Form of therapy where people with similar experiences/issues come together with a professional therapist.,Y,N,N
+EDU,Counseling Services and Education,FCO,Family counseling,A type of psychological counseling (psychotherapy) that can help family members improve communication and resolve conflicts.,Y,N,N
+EDU,Counseling Services and Education,MCO,Marital/couples counseling,,Y,N,N
+EDU,Counseling Services and Education,SAE,Substance use education,,Y,N,N
+EDU,Counseling Services and Education,TAEC,"Hepatitis education, counseling, or support","Provides education, counseling, and guidance and support for individuals who are at risk for or potentially infected with the hepatitis virus.",Y,N,N
+EDU,Counseling Services and Education,HAEC,"HIV or AIDS education, counseling, or support","Access to education, counseling, and support groups to ‘at risk’ individuals and also individuals who have been infected with the virus.",Y,N,N
+EDU,Counseling Services and Education,HEOH,Health education services other than HIV/AIDS or hepatitis,"Any combination of learning experiences designed to help individuals and communities improve their health, by increasing their knowledge or influencing their attitudes.",Y,N,N
+EDU,Counseling Services and Education,EMP,Employment counseling or training,"Advises, coaches, provides information to and supports people who are planning, seeking and managing their life/work direction.",Y,N,N
+EDU,Counseling Services and Education,VOC,"Vocational training or educational support (for example, high school coursework, GED preparation, etc.) ",,Y,N,N
+MS,Medical Services,HAV,Hepatitis A vaccination,,Y,N,N
+MS,Medical Services,HBV,Hepatitis B vaccination,,Y,N,N
+TOBAC,Tobacco/Screening Services,NRT,Nicotine replacement therapy,"Administers nicotine to the body by means other than tobacco, without other harmful chemicals found in tobacco. Common forms of nicotine replacement therapy are nicotine patches, nicotine gum or lozenges, nasal spray and inhaler. The goal of nicotine replacement is to prevent cravings in a tobacco user, allowing the person to abstain from tobacco.",Y,Y,Y
+TOBAC,Tobacco/Screening Services,NSC,Non-nicotine smoking/tobacco cessation medications,"Are medications that do not contain nicotine but act on the brain to reduce a person's craving for tobacco. Some common medications are Bupropion (Zyban, Wellbutrin), and Nortriptyline (Pamelor). Medications are often prescribed in conjunction with behavioral counseling or support groups to provide the best chance for achieving long-term smoking abstinence. (http://www.mayoclinic.com) ",Y,Y,Y
+TOBAC,Tobacco/Screening Services,STU,Screening for tobacco use,"Determines a client's use of tobacco products, such as cigarettes, cigars, pipe tobacco, or smokeless tobacco. It is generally recommended that providers screen for tobacco use on a regular basis by asking clients, as they are seen, about their current and past use of tobacco products and their exposure to secondhand smoke or tobacco. ",Y,Y,Y
+TOBAC,Tobacco/Screening Services,TCC,Smoking/tobacco cessation counseling,"Includes interventions for persons who use tobacco and want help with stopping, including behavioral support or counseling in groups or individually.",Y,Y,Y
+SMP,Facility Smoking Policy ,SMON,Smoking not permitted,Smoking is not allowed.,Y,Y,Y
+SMP,Facility Smoking Policy ,SMOP,Smoking permitted without restriction ,Smoking permitted with no restriction.,Y,Y,Y
+SMP,Facility Smoking Policy ,SMPD,Smoking permitted in designated area,A designated area in which smoking is permitted.,Y,Y,Y
+AGE,Age Groups Accepted,ADLT,Adults,Facility accepts adults (26 - 64) for treatment.,Y,Y,Y
+AGE,Age Groups Accepted,CHLD,Children/adolescents,Facility accepts children/adolescents (12 or younger) for treatment.,Y,Y,Y
+AGE,Age Groups Accepted,SNR,Seniors (65 or older),Facility accepts seniors (65 or older) for treatment.,Y,Y,Y
+AGE,Age Groups Accepted,YAD,Young adults ,Facility accepts young adults (18 -25) for treatment.,Y,Y,Y
+GN,Gender Accepted,FEM,Female,Female ,Y,N,N
+GN,Gender Accepted,MALE,Male,Male ,Y,N,N
+EXCL,Exclusive Services,BMO,Methadone and buprenorphine clients only,,Y,N,N
+EXCL,Exclusive Services,DU,Specially designed program for DUI/DWI clients,,Y,N,N
+EXCL,Exclusive Services,DUO,Serves only DUI/DWI clients,An outpatient substance use treatment facility that serves driving under the influence (DUI) or driving while intoxicated (DWI) clients exclusively.,Y,N,N
+EXCL,Exclusive Services,MO,Methadone clients only,,Y,N,N
+EXCL,Exclusive Services,OTPA,All Clients in Opioid Treatment Program,,Y,N,N
+EXCL,Exclusive Services,VO,Serves Veterans only,,Y,Y,Y
+EXCL,Exclusive Services,AUDO,Alcohol use disorder clients only,,Y,N,N
+SL,Language Services,AH,Services for the deaf and hard of hearing,Service provided for persons who are deaf and hard of hearing.,Y,Y,Y
+AIL,American Indian or Alaskan Native Languages,N13,Hopi,Staff counselors provide treatment in Hopi.,Y,Y,Y
+AIL,American Indian or Alaskan Native Languages,N18,Lakota,Staff counselors provide treatment in Lakota.,Y,Y,Y
+AIL,American Indian or Alaskan Native Languages,N23,Navajo,Staff counselors provide treatment in Navajo.,Y,Y,Y
+AIL,American Indian or Alaskan Native Languages,N24,Ojibwa,Staff counselors provide treatment in Ojibwa.,Y,Y,Y
+AIL,American Indian or Alaskan Native Languages,N40,Yupik,Staff counselors provide treatment in Yupik.,Y,Y,Y
+FT,Facility Type,CMHC,Community mental health center,"Facility that (1) provides outpatient services, including specialized outpatient services for children, the elderly, individuals who are chronically mentally ill, and residents of its mental health service area who have been discharged from inpatient treatment at a mental health facility; (2) provides 24-hour emergency care services; (3) provides day treatment or other partial hospitalization services, or psychosocial rehabilitation services; (4) provides screening for patients being considered for admission to state mental health facilities to determine the appropriateness of the admission; and (5) meets applicable licensing or certification requirements for CMHCs in the state in which it is located. (https://www.cms.gov/",N,Y,N
+FT,Facility Type,CCBHC,Certified Community Behavioral Health Clinic,"Facility that (1) provides outpatient services, including specialized outpatient services for children, the elderly, individuals who are chronically mentally ill, and residents of its mental health service area who have been discharged from inpatient treatment at a mental health facility; (2) provides 24-hour emergency care services; (3) provides day treatment or other partial hospitalization services, or psychosocial rehabilitation services; (4) provides screening for patients being considered for admission to state mental health facilities to determine the appropriateness of the admission; and (5) meets applicable licensing or certification requirements for CMHCs in the state in which it is located. (https://www.cms.gov/",N,Y,N
+FT,Facility Type,MSMH,"Multi-setting mental health facility (e.g., residential plus outpatient)","Facility that provides mental health services in two service settings (residential and outpatient setting) and is not classified as a psychiatric hospital, general hospital, medical center, CMHC, or as a residential treatment center. The classification of psychiatric hospital, general hospital, medical center, CMHC, or residential treatment center - offering two service settings - takes precedence over a multi-setting classification.",N,Y,N
+FT,Facility Type,OMH,Outpatient mental health facility,"Facility that primarily provides ambulatory clients/patients with less than 24-hour outpatient mental health services for generally less than 3 hours at a single visit. Services are provided on an individual, group or family basis, usually in a clinic or similar facility. A psychiatrist generally assumes the medical responsibility for all clients/patients or direction of the mental health treatment.",N,Y,N
+FT,Facility Type,ORES,Other residential treatment facility  ,"Facility not licensed as a psychiatric hospital, whose primary purpose is to provide individually planned programs of mental health treatment services in a residential care setting and is not specifically for children only or adults only.",N,Y,N
+FT,Facility Type,PH,Partial hospitalization/day treatment,"Medically-supervised facility that offers comprehensive, coordinated, and structured clinical services in a time-limited series of structured, face-to-face therapeutic sessions organized at various levels of intensity/frequency. Services are provided for diagnostic evaluation, active treatment of a condition, or to prevent relapse, hospitalization, or incarceration. The PH facility may be freestanding or part of a broader system that is distinct or a separately-organized unit that is neither residential nor inpatient. PH is an alternative to inpatient care; is transitional care following an inpatient stay in lieu of continued hospitalization; and is a step-down from inpatient care. PH is less than 24-hour care available at least 5 days per week and may be offered on a half-day, weekend, or evening hours basis.",N,Y,N
+FT,Facility Type,PSY,Psychiatric hospital or psychiatric unit of a general hospital,"Licensed general hospital (public or private) that provides inpatient mental health services in at least one separate psychiatric living unit. This unit must have specifically allocated staff and space (beds) for the treatment of persons with mental illness. The unit may be located in the hospital itself or in a separate building, either adjacent or more remote, and is owned by the hospital. It may also provide 24-hour residential care and/or less than 24-hour care (e.g., outpatient, day treatment, partial hospitalization), but these additional service settings are not requirements.",N,Y,N
+FT,Facility Type,RTCA,Residential treatment center (RTC) for adults ,"Facility not licensed as a psychiatric hospital, whose primary purpose is to provide individually planned programs of mental health treatment services in a residential care setting for adults.",N,Y,N
+FT,Facility Type,RTCC,Residential treatment center (RTC) for children ,"Facility not licensed as a psychiatric hospital that primarily provides individually planned programs of mental health treatment in a residential care setting for children and youth younger than 18. (Some RTCs for children may accept persons through age 21.) This type of facility must have a clinical program that is directed by a psychiatrist, psychologist, social worker, or psychiatric nurse who has a master's or a doctoral degree.",N,Y,N
+OL,Other Languages,SP,Spanish,Staff counselors provide treatment in Spanish.,Y,Y,Y
+OL,Other Languages,F4,Arabic,Staff counselors provide treatment in Arabic.,Y,Y,Y
+OL,Other Languages,F17,Any Chinese Language,"Any principal language group of eastern Asia, belonging to the Sino-Tibetan language family.",Y,Y,Y
+OL,Other Languages,F19,Creole,Staff counselors provide treatment in Creole.,Y,Y,Y
+OL,Other Languages,F25,Farsi,Staff counselors provide treatment in Farsi.,Y,Y,Y
+OL,Other Languages,F28,French,Staff counselors provide treatment in French.,Y,Y,Y
+OL,Other Languages,F30,German,Staff counselors provide treatment in German.,Y,Y,Y
+OL,Other Languages,F31,Greek,Staff counselors provide treatment in Greek.,Y,Y,Y
+OL,Other Languages,F35,Hebrew,Staff counselors provide treatment in Hebrew.,Y,Y,Y
+OL,Other Languages,F36,Hindi,Staff counselors provide treatment in Hindi.,Y,Y,Y
+OL,Other Languages,F37,Hmong,Staff counselors provide treatment in Hmong.,Y,Y,Y
+OL,Other Languages,F42,Italian,Staff counselors provide treatment in Italian.,Y,Y,Y
+OL,Other Languages,F43,Japanese,Staff counselors provide treatment in Japanese.,Y,Y,Y
+OL,Other Languages,F47,Korean,Staff counselors provide treatment in Korean.,Y,Y,Y
+OL,Other Languages,F66,Polish,Staff counselors provide treatment in Polish.,Y,Y,Y
+OL,Other Languages,F67,Portuguese,Staff counselors provide treatment in Portuguese.,Y,Y,Y
+OL,Other Languages,F70,Russian,Staff counselors provide treatment in Russian.,Y,Y,Y
+OL,Other Languages,F81,Tagalog,Staff counselors provide treatment in Tagalog.,Y,Y,Y
+OL,Other Languages,F92,Vietnamese,Staff counselors provide treatment in Vietnamese.,Y,Y,Y
+HOSP,Hospitals,GH,General Hospital (including VA hospital) ,A hospital in which patients with many different types of ailments are given care.,Y,N,N
+HOSP,Hospitals,PSYH,Psychiatric hospital ,"Facility licensed and operated as a state/public psychiatric hospital or as a private psychiatric hospital licensed by the state that primarily provides 24-hour inpatient care to persons with mental illness. It may also provide 24-hour residential care and/or less than 24-hour care (e.g., outpatient, day treatment, partial hospitalization), but these additional service settings are not requirements.",Y,N,N
+OM,Opioid Medications used in Treatment,MU,Methadone used in Treatment,,Y,N,N
+OM,Opioid Medications used in Treatment,BU,Buprenorphine used in Treatment,Buprenorphine is used in medication-assisted treatment (MAT) to help people reduce or quit their use of heroin or other opiates.,Y,N,N
+OM,Opioid Medications used in Treatment,NU,Naltrexone used in Treatment,,Y,N,N
+OMSC,External Opioid Medications Source,INPE,In-network prescribing entity,,Y,N,N
+OMSC,External Opioid Medications Source,RPE,Other contracted prescribing entity,,Y,N,N
+OMSC,External Opioid Medications Source,PC,No formal relationship with prescribing entity,,Y,N,N
+AUT,Type of Alcohol Use Disorder Treatment,NAUT,Does not treat alcohol use disorder ,,Y,N,N
+AUT,Type of Alcohol Use Disorder Treatment,NMAUT,Does not use medication assisted treatment for alcohol use disorder ,,Y,N,N
+AUT,Type of Alcohol Use Disorder Treatment,ACMA,Accepts clients using medication assisted treatment for alcohol use disorder but prescribed elsewhere,,Y,N,N
+AUT,Type of Alcohol Use Disorder Treatment,PMAT,This facility administers/prescribes medication for alcohol use disorder,,Y,N,N
+SMAT, External Source of Medications Used for Alcohol Use Disorder Treatment,AUINPE,In-network prescribing entity,,Y,N,N
+SMAT, External Source of Medications Used for Alcohol Use Disorder Treatment,AURPE,Other contracted prescribing entity,,Y,N,N
+SMAT, External Source of Medications Used for Alcohol Use Disorder Treatment,AUPC,No formal relationship with prescribing entity,,Y,N,N
+OT,Type of Opioid Treatment,DB,Buprenorphine detoxification  ,,Y,N,N
+OT,Type of Opioid Treatment,BUM,Buprenorphine maintenance  ,,Y,N,N
+OT,Type of Opioid Treatment,BMW,Buprenorphine maintenance for predetermined time ,Buprenorphine maintenance occurs when a patient is doing well on a steady dose of buprenorphine. The length of time of the maintenance phase is tailored to each patient.,Y,N,N
+OT,Type of Opioid Treatment,OTP,SAMHSA-certified Opioid Treatment Program,"The process by which the SAMHSA Center for Substance Abuse Treatment, Division of Pharmacologic Therapies determines that an OTP is qualified to provide opioid treatment under 42 CFR Part 8. For additional information on the OTP certification process, see http://www.samhsa.gov/medication-assisted-treatment/opioid-treatment-programs/.",Y,N,N
+OT,Type of Opioid Treatment,DM,Methadone detoxification  ,,Y,N,N
+OT,Type of Opioid Treatment,MM,Methadone maintenance  ,Comprehensive treatment program that involves the long-term prescribing of methadone as an alternative to the opioid on which the client was dependent.,Y,N,N
+OT,Type of Opioid Treatment,MMW,Methadone maintenance for predetermined time ,,Y,N,N
+OT,Type of Opioid Treatment,UB,Prescribes buprenorphine ,,Y,N,N
+OT,Type of Opioid Treatment,UN,Prescribes naltrexone,,Y,N,N
+OT,Type of Opioid Treatment,RPN,Relapse prevention with naltrexone,Program or group specifically tailored for relapse prevention from Naltrexone which helps people retrain their minds and behaviors to avoid alcohol as a solution to emotional or psychological triggers.,Y,N,N
+OT,Type of Opioid Treatment,PAIN,Use methadone/buprenorphine for pain management or emergency dosing,,Y,N,N
+OT,Type of Opioid Treatment,MOA,Accepts clients on opioid medication but prescribed elsewhere,,Y,N,N
+OT,Type of Opioid Treatment,NMOA,Does not use medication for opioid addiction  ,,Y,N,N
+OT,Type of Opioid Treatment,ULC,Lofexidine/clonidine detoxification  ,,Y,N,N
+OT,Type of Opioid Treatment,NOOP,Does not treat opioid addiction,,Y,N,N
+PHR,Pharmacotherapies,ACM,Acamprosate (Campral®),,Y,N,N
+PHR,Pharmacotherapies,CHLOR,Chlorpromazine (Thorazine®),,N,Y,N
+PHR,Pharmacotherapies,DROPE,Droperidol (Inapsine®),,N,Y,N
+PHR,Pharmacotherapies,FLUPH,Fluphenazine (Prolixin®),,N,Y,N
+PHR,Pharmacotherapies,HALOP,Haloperidol (Haldol®),,N,Y,N
+PHR,Pharmacotherapies,LOXAP,Loxapine (Loxitane®),,N,Y,N
+PHR,Pharmacotherapies,PERPH,Perphenazine (Trilafon/Etrafon/Triavil/Triptafen®),,N,Y,N
+PHR,Pharmacotherapies,PIMOZ,Pimozide (Orap®),,N,Y,N
+PHR,Pharmacotherapies,PROCH,Prochlorperazine (Compazine/Compro®),,N,Y,N
+PHR,Pharmacotherapies,THIOT,Thiothixene (Navane®),,N,Y,N
+PHR,Pharmacotherapies,THIOR,Thioridazine (Mellaril/Melleril®),,N,Y,N
+PHR,Pharmacotherapies,TRIFL,Trifluoperazine (Stelazine®),,N,Y,N
+PHR,Pharmacotherapies,ARIPI,Aripiprazole (Abilify®) ,,N,Y,N
+PHR,Pharmacotherapies,ASENA,Asenapine (Saphris/Sycrest®) ,,N,Y,N
+PHR,Pharmacotherapies,BREXP,Brexpiprazole (Rexulti®) ,,N,Y,N
+PHR,Pharmacotherapies,CARIP,Cariprazine (Vraylar®) ,,N,Y,N
+PHR,Pharmacotherapies,CLOZA,Clozapine (Clozaril®) ,,N,Y,N
+PHR,Pharmacotherapies,ILOPE,IIoperidone (Fanapt®) ,,N,Y,N
+PHR,Pharmacotherapies,LURAS,Lurasidone (Latuda®) ,,N,Y,N
+PHR,Pharmacotherapies,OLANZ,Olanzapine (Zyprexa®) ,,N,Y,N
+PHR,Pharmacotherapies,OLANZF,Olanzapine/Fluoxetine combination (Symbyax®) ,,N,Y,N
+PHR,Pharmacotherapies,PALIP,Paliperidone (Invega Trinza®) ,,N,Y,N
+PHR,Pharmacotherapies,QUETI,Quetiapine (Seroquel®) ,,N,Y,N
+PHR,Pharmacotherapies,RISPE,Risperidone (Risperdal®) ,,N,Y,N
+PHR,Pharmacotherapies,ZIPRA,Ziprasidone (Geodon®) ,,N,Y,N
+PHR,Pharmacotherapies,DSF,Disulfiram (Antabuse®),,Y,N,N
+PHR,Pharmacotherapies,METH,Methadone,,Y,N,N
+PHR,Pharmacotherapies,BSDM,Buprenorphine sub-dermal implant (Probuphine®),"A subdermal implant consisting of four small devices, about the size of a matchstick, surgically placed under the skin in the patient’s upper arm. The device releases a steady, measured dose of buprenorphine for six months.",Y,N,N
+PHR,Pharmacotherapies,BWN,Buprenorphine with naloxone  (Ex. Suboxone®),A prescription medication that combines buprenorphine (which helps relieve symptoms of opiate withdrawal) and naloxone (reverse the effects of narcotics) used to treat opioid addiction.,Y,N,N
+PHR,Pharmacotherapies,BWON,Buprenorphine without naloxone,"An opioid used to treat opioid addiction by relieving the symptoms of withdrawal. It can be used under the tongue, by injection, as a skin patch, or as an implant.",Y,N,N
+PHR,Pharmacotherapies,BERI,"Buprenorphine (extended-release, injectable, for example, Sublocade®)",An injection used to treat adults with moderate to severe opioid use disorder (prescription or illegal) who have received an oral transmucosal (used under the tongue or inside the cheek) buprenorphine-containing medicine at a dose that controls withdrawal symptoms for a minimum of 7 days.,Y,N,N
+PHR,Pharmacotherapies,NXN,Naltrexone (oral),,Y,N,N
+PHR,Pharmacotherapies,VTRL,"Naltrexone (extended-release, injectable naltrexone (Vivitrol®))",,Y,N,N
+PHR,Pharmacotherapies,MPD,Medications for psychiatric disorders,,Y,N,N
+PHR,Pharmacotherapies,MHIV,Medications for HIV treatment,,Y,N,N
+PHR,Pharmacotherapies,MHCV,Medications for Hepatitis C treatment,,Y,N,N
+PHR,Pharmacotherapies,LFXD,Lofexidine,,Y,N,N
+PHR,Pharmacotherapies,CLND,Clonidine,,Y,N,N
+TAP,Treatment Approaches,AT,Activity therapy,"Includes art, dance, music, recreational and occupational therapies, and psychodrama.",N,Y,N
+TAP,Treatment Approaches,ANG,Anger management ,"Uses strategies to address the anger cycle, conflict resolution, assertiveness skills, and anger-control plans. The goal of anger management is to reduce both emotional feelings and the physiological arousal that anger causes. ",Y,N,N
+TAP,Treatment Approaches,BMT,Behavior modification,"Applies learning and conditioning principles to modify overt behaviors, which are those behaviors obvious to everyone, including the client/patient.",N,Y,N
+TAP,Treatment Approaches,BIA,Brief intervention,"A short-term intervention, usually one to five sessions, for substance abusers who are not yet dependent.",Y,N,N
+TAP,Treatment Approaches,CBT,Cognitive behavioral therapy,"Involves recognizing unhelpful patterns of thinking and reacting, and then modifying or replacing these with more realistic or helpful ones. The therapy can be conducted with individuals, families, or groups, and clients are generally expected to be active participants in their own therapy.",Y,Y,Y
+TAP,Treatment Approaches,CRT,Cognitive remediation therapy,"Are two similar approaches that use discussions and problem-solving sessions facilitated by a therapist to help couples and family members improve their understanding of and the way they respond to one another. This type of therapy can resolve patterns of behavior that might lead to more severe mental illness. Family therapy can help educate about the nature of mental disorders and teach skills to better cope with the effects of having a family member with a mental illness, such as how to deal with feelings of anger or guilt.",N,Y,N
+TAP,Treatment Approaches,CFT,Couples/family therapy,"Are two similar approaches that use discussions and problem-solving sessions facilitated by a therapist to help couples and family members improve their understanding of and the way they respond to one another. This type of therapy can resolve patterns of behavior that might lead to more severe mental illness. Family therapy can help educate about the nature of mental disorders and teach skills to better cope with the effects of having a family member with a mental illness, such as how to deal with feelings of anger or guilt.",N,Y,N
+TAP,Treatment Approaches,CMI,Contingency management/motivational incentives ,"Often used in the treatment of drug and alcohol abuse, the approach employs a positive-reinforcement treatment method in which patients are given rewards for constructive actions taken toward their recovery.",Y,N,N
+TAP,Treatment Approaches,CRV,Community reinforcement plus vouchers ,"An intensive outpatient therapy in which individuals focus on improving family relations, receive vocational training, and learn a variety of skills to minimize drug dependency. An incentive program (vouchers whereby individuals can earn points exchangeable for retail items) is used to encourage individuals to remain in treatment and be abstinent.",Y,N,N
+TAP,Treatment Approaches,DBT,Dialectical behavior therapy,"A cognitive behavioral treatment approach with two key characteristics: a behavioral, problem-solving focus blended with acceptance-based strategies, and an emphasis on dialectical processes. ""Dialectical"" refers to the issues involved in treating patients with multiple disorders and to the type of thought processes and behavioral styles used in the treatment strategies. DBT has five components: (1) capability enhancement (skills training); (2) motivational enhancement (individual behavioral treatment plans); (3) generalization (access to therapist outside clinical setting, homework, and inclusion of family in treatment); (4) structuring of the environment (programmatic emphasis on reinforcement of adaptive behaviors); and (5) capability and motivational enhancement of therapists (therapist team consultation group). DBT emphasizes balancing behavioral change, problem-solving, and emotional regulation with validation, mindfulness, and acceptance.",Y,Y,Y
+TAP,Treatment Approaches,ECT,Electroconvulsive therapy,"Also known as ECT, uses low-voltage electrical stimulation of the brain to treat some forms of major depression, acute mania, and some forms of schizophrenia. This potentially life-saving technique is considered only when other therapies have failed, when a person is seriously medically ill and/or unable to take medication, or when a person is very likely to commit suicide. Substantial improvements in the equipment, dosing guidelines, and anesthesia have significantly reduced the side effects.",N,Y,N
+TAP,Treatment Approaches,EMDR,Eye Movement Desensitization and Reprocessing therapy,"Also known as ECT, uses low-voltage electrical stimulation of the brain to treat some forms of major depression, acute mania, and some forms of schizophrenia. This potentially life-saving technique is considered only when other therapies have failed, when a person is seriously medically ill and/or unable to take medication, or when a person is very likely to commit suicide. Substantial improvements in the equipment, dosing guidelines, and anesthesia have significantly reduced the side effects.",N,Y,N
+TAP,Treatment Approaches,GT,Group therapy,Involves groups of usually 4 to 12 people who have similar problems and who meet regularly with a therapist. The therapist uses the emotional interactions of the group's members to (1) help them get relief from distress and (2) possibly modify their behavior.,N,Y,N
+TAP,Treatment Approaches,IDD,Integrated dual disorders treatment,"Provides combined treatment for mental illness and substance abuse from the same clinician or treatment team. Effective integrated treatment programs view recovery as a long-term, community-based process. The approach employs counseling designed especially for those with co-occurring disorders.",N,Y,N
+TAP,Treatment Approaches,IPT,Individual psychotherapy,"Focuses on a patient's current life and relationships within the family, social, and work environments through one-on-one conversations with a therapist. The goal is to identify and resolve problems with insight, as well as build on strengths.",N,Y,N
+TAP,Treatment Approaches,KIT,Ketamine Infusion Therapy,"Focuses on a patient's current life and relationships within the family, social, and work environments through one-on-one conversations with a therapist. The goal is to identify and resolve problems with insight, as well as build on strengths.",N,Y,N
+TAP,Treatment Approaches,MOTI,Motivational interviewing ,"A counseling approach which acknowledges that many people experience ambivalence when deciding to make changes. Its aim is not to focus immediately on the action of changing, but to work to enhance motivation to change.",Y,N,N
+TAP,Treatment Approaches,MXM,Matrix Model,"Provides a framework for substance abuse users to obtain the ability to cease drug use, stay in treatment, and participate in an educational program on addiction and relapse. Users are provided with direction and support from a trained therapist and are introduced to self-help programs.",Y,N,N
+TAP,Treatment Approaches,REBT,Rational emotive behavioral therapy ,"A therapeutic approach that places the focus on present issues, such as currently held attitudes, painful emotions, and maladaptive behaviors that can disrupt life. Treatment includes an REBT practitioner who personalizes a set of techniques for helping individuals examine their own thoughts, beliefs, and actions and replace those that are self-defeating with more life-enhancing alternatives.",Y,N,N
+TAP,Treatment Approaches,RELP,Relapse prevention  ,A cognitive behavioral therapy developed for the treatment of problem drinking and adapted later for cocaine addicts. Cognitive behavioral strategies are based on the theory that learning processes play a critical role in the development of maladaptive behavioral patterns. Individuals learn to identify and correct problematic behaviors. Relapse prevention encompasses several cognitive behavioral strategies that facilitate abstinence as well as provide help for people who experience relapse.,Y,N,N
+TAP,Treatment Approaches,SACA,Substance abuse counseling,"A short-term treatment that has been generalized for a variety of disorders including opiate drug dependence and cocaine abuse. The therapy includes supportive techniques which encourage the patient to discuss personal experiences, and expressive techniques, which enable the patient to work through interpersonal relationship issues and gain greater self-understanding. ",Y,N,N
+TAP,Treatment Approaches,TMS,Transcranial Magnetic Stimulation,"A short-term treatment that has been generalized for a variety of disorders including opiate drug dependence and cocaine abuse. The therapy includes supportive techniques which encourage the patient to discuss personal experiences, and expressive techniques, which enable the patient to work through interpersonal relationship issues and gain greater self-understanding. ",N,Y,N
+TAP,Treatment Approaches,TRC,Trauma-related counseling ,Cognitive behavior techniques adapted for clients suffering from post-traumatic stress disorder (PTSD) and other effects of abuse and trauma.,Y,N,N
+TAP,Treatment Approaches,TWFA,12-step facilitation,"A 12-step program is a support group made up of people who share the same addiction. The ""12 steps"" refer to the steps recovering addicts must take to overcome their addiction as part of this program. Attendees at group meetings share their experiences, challenges, successes and failures, and provide peer support for each other.",Y,N,N
+TAP,Treatment Approaches,TT,Trauma therapy,"Is an intervention that focuses on reducing or eliminating symptoms, improving functioning, and reducing the long-term negative effects of trauma in persons who have experienced a traumatic event such as physical abuse, sexual abuse, emotional abuse, family tragedy, violence, war, or natural disaster.",N,Y,N
+EMS,Emergency Mental Health Services,CIT,Crisis intervention team,"A self-initiated community partnership between local law enforcement, county health services, mental health advocates, and mental health consumers. It is designed to address the needs of mental health consumers who enter the judicial system during a crisis state.",N,Y,N
+EMS,Emergency Mental Health Services,PEON,Psychiatric emergency onsite services,"A self-initiated community partnership between local law enforcement, county health services, mental health advocates, and mental health consumers. It is designed to address the needs of mental health consumers who enter the judicial system during a crisis state.",N,Y,N
+EMS,Emergency Mental Health Services,PEOFF,Psychiatric emergency mobile/off-site services,"A self-initiated community partnership between local law enforcement, county health services, mental health advocates, and mental health consumers. It is designed to address the needs of mental health consumers who enter the judicial system during a crisis state.",N,Y,N
+EMS,Emergency Mental Health Services,WI,Psychiatric emergency walk-in services,"Designed to provide accessible, professional, cost-effective services to individuals in psychiatric crisis, and strive to stabilize consumers on site and avoid psychiatric hospitalization whenever possible.",N,Y,N
