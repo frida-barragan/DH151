@@ -94,7 +94,7 @@ function getGeoJSON(){
 		geojson_data = data;
 
 		// call the map function
-		mapGeoJSON('NUMPOINTS', 7) //add a field to be used
+		mapGeoJSON('NUMPOINTS', 8) //add a field to be used
 	})
 }
 // function to map a geojson file and style it with choropleth
