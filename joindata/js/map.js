@@ -14,7 +14,7 @@ let fieldtomap;
 let legend = L.control({position: 'bottomright'});
 let info_panel = L.control();
 let csvdata;
-let filters;
+
 	
 
 // initialize
@@ -36,6 +36,7 @@ function readCSV(path1){
 			csvdata = data
 			// map the data
 			mapCSV(data);
+
 			 
 		}
 	});
@@ -258,16 +259,16 @@ function createLegend(){
 		legend.addTo(map);
 }
 
-function createSidebar(){
+function createSidebar(csvdata){
 	// Add description text
 	$('.sidebar').append(`
 	<p>
-		Showing the last 1000 crime incidents reported by the LAPD
+		
 	</p>
 	`)
 
 	// add sidebar buttons
-	csvdata.forEach(function(item){
+	csvdata.data.forEach(function(item,index){
 		$('.sidebar').append(`
 			<div class="sidebar-item" onclick="mapJSON('${item.city}')">${item.name1}</div>
 		`)
