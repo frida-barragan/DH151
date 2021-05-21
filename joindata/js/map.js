@@ -263,12 +263,12 @@ function createSidebar(csvdata){
 	// Add description text
 	$('.sidebar').append(`
 	<p>
-		
+	The map to the right shows the county of Los Angeles in California distributed by zip code. The user can hover over each zone to get data about the raw count of mental health facilities. The user can also click on the points to get further information about each facility.
 	</p>
 	`)
 
 	// add sidebar buttons
-	csvdata.data.forEach(function(item,index){
+	csvdata.forEach(function(item,index){
 		$('.sidebar').append(`
 			<div class="sidebar-item" onclick="mapJSON('${item.city}')">${item.name1}</div>
 		`)
