@@ -14,12 +14,15 @@ let fieldtomap;
 let legend = L.control({position: 'bottomright'});
 let info_panel = L.control();
 let csvdata;
+let filters;
+	
 
 // initialize
 $( document ).ready(function() {
     createMap(lat,lon,zl);
 	getGeoJSON();
     readCSV(path1);
+	createSidebar()
 	
 });
 
@@ -37,6 +40,7 @@ function readCSV(path1){
 		}
 	});
 }
+
 
 
 function mapCSV(csvdata){
@@ -254,7 +258,21 @@ function createLegend(){
 		legend.addTo(map);
 }
 
+function createSidebar(){
+	// Add description text
+	$('.sidebar').append(`
+	<p>
+		Showing the last 1000 crime incidents reported by the LAPD
+	</p>
+	`)
 
+	// add sidebar buttons
+	csvdata.forEach(function(item){
+		$('.sidebar').append(`
+			<div class="sidebar-item" onclick="mapJSON('${item.city}')">${item.name1}</div>
+		`)
+	})
+}
 
 // create the map
 function createMap(lat,lon,zl){
@@ -264,5 +282,4 @@ function createMap(lat,lon,zl){
 		attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 	}).addTo(map);
 }
-
 

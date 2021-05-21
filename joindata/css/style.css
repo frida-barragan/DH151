@@ -24,6 +24,13 @@ body,html {
 	padding:10px;
 	background-color: #f0e4d7;
 }
+.sidebar-item{
+	padding: 7px;
+	background: rgb(196, 174, 173);
+	border: 1px solid rgb(151, 136, 136);
+	margin: 3px;
+	color: rgb(255, 254, 254);
+}
 
 .content {
 	grid-area: content;
