@@ -80,24 +80,7 @@ section{
     opacity: 1;
     right: 0;
   }
-.button{
-    position: absolute;
-    left: 45%;
-    bottom: 30%;
-    font-family: 'Gill Sans', sans-serif;
-    font-size:small;
-    text-decoration:none;
-    color:white;
-    border:#3d4142 1px solid;
-    padding:10px 20px;
-    border-radius:10px;
-    margin-top:20px;
-    
-  }
-#showcase .button:hover{
-    background:#fa1201;
-    color:white;
-  }
+
   
 h1{
 font-weight:600;
@@ -131,18 +114,6 @@ h3{
     
   }
 
-.button-fade-in{
-    opacity:0;
-    animation: fadeIn 5s;
-    -webkit-animation: fadeIn 5s;
-    text-emphasis-color: white;
-    border-radius: 10px;
-    align-content: center;
-    animation-delay: 18s;
-    -webkit-animation-delay: 18s;
-    animation-fill-mode: forwards;
-  }
-  
   @keyframes fadeIn {
     0% {opacity:0;}
     100% {opacity:1;}
