@@ -30,18 +30,71 @@ section{
     font-size: small;
     
 }
+.button{
+    position: absolute;
+    left: 45%;
+    bottom: 30%;
+    font-family: 'Gill Sans', sans-serif;
+    font-size:small;
+    text-decoration:none;
+    color:#9dad7f;
+    border:#9dad7f 1px solid;
+    padding:10px 20px;
+    border-radius:10px;
+    margin-top:20px;
+    color:grey;
+  }
+  
 h1{
 font-weight:600;
 font-size:  380%;
-color: black;
-animation-name: hd;
-animation-delay: 1s;
+color: white;
+
 }
 h3{
     font-size: smaller;
 }
 
-@keyframes hd {
-	from {background-color: white  }
-	to {background-color: #bccbdb;}
+.animatedtext{  
+    opacity:0;
+    animation: fadeIn 3s;
+    -webkit-animation: fadeIn 3s;
+    text-emphasis-color: white;
+    border-radius: 10px;
+    display: inline-block;
+    font-family: 'Gill Sans', sans-serif;
+    font-size: 10px;
+    align-content: center;
+    background-color: grey;
+    animation-delay: 15s;
+    -webkit-animation-delay: 15s;
+    animation-fill-mode: forwards;
   }
+  
+  @keyframes fadeIn {
+      from {opacity:0;}
+    to {opacity:1;}
+    
+  }
+
+.button-fade-in{
+    opacity:0;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    text-emphasis-color: white;
+    border-radius: 10px;
+    align-content: center;
+    animation-delay: 18s;
+    -webkit-animation-delay: 18s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    
+  }
+  
+  
+  
+  
