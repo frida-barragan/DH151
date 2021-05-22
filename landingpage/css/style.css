@@ -30,6 +30,56 @@ section{
     font-size: small;
     
 }
+.example_f {
+    opacity:0;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    text-emphasis-color: white;
+    align-content: center;
+    animation-delay: 18s;
+    -webkit-animation-delay: 18s;
+    animation-fill-mode: forwards;
+    position: absolute;
+    left: 45%;
+    bottom: 30%;
+    font-family: 'Gill Sans', sans-serif;
+    font-size:small;
+    text-decoration:none;
+    color:white;
+    border:#3d4142 1px solid;
+    padding:10px 20px;
+    border-radius:10px;
+    margin-top:20px;
+    background: linear-gradient(to right, #67b26b, #4ca2cb) !important;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100px;
+    transition: all 0.4s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  .example_f span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.4s;
+  }
+  .example_f span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  .example_f:hover span {
+    padding-right: 25px;
+  }
+  .example_f:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
 .button{
     position: absolute;
     left: 45%;
@@ -37,12 +87,16 @@ section{
     font-family: 'Gill Sans', sans-serif;
     font-size:small;
     text-decoration:none;
-    color:#9dad7f;
-    border:#9dad7f 1px solid;
+    color:white;
+    border:#3d4142 1px solid;
     padding:10px 20px;
     border-radius:10px;
     margin-top:20px;
-    color:grey;
+    
+  }
+#showcase .button:hover{
+    background:#fa1201;
+    color:white;
   }
   
 h1{
