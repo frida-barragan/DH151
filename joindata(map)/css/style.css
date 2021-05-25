@@ -23,6 +23,8 @@ body,html {
 	grid-area: sidebar;
 	padding:10px;
 	background-color: #f0e4d7;
+	overflow-y: scroll; /* Show vertical scrollbar */
+	overflow-x: scroll; /* Show horizontal scrollbar */
 }
 .sidebar-item{
 	padding: 7px;

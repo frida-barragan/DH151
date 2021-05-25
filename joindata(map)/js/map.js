@@ -24,6 +24,7 @@ $( document ).ready(function() {
     readCSV(path1);
 	createSidebar()
 	
+	
 });
 
 // function to read csv data
@@ -36,7 +37,7 @@ function readCSV(path1){
 			csvdata = data
 			// map the data
 			mapCSV(data);
-
+			
 			 
 		}
 	});
@@ -65,6 +66,16 @@ function mapCSV(csvdata){
 		// add marker to featuregroup
 		markers.addLayer(marker)
 		markers.bringToFront(markers)
+		
+		
+
+		if (item.zip !== "9000"){
+
+			$('.sidebar').append(`<p align = "center"><u>${item.zip}</p>`)
+			
+		}
+		
+		
 
 
 		
@@ -88,11 +99,10 @@ function createSidebar(csvdata){
 	`)
 
 	// add sidebar buttons
-	csvdata.forEach(function(item,index){
-		$('.sidebar').append(`
-			<div class="sidebar-item" onclick="mapJSON('${item.city}')">${item.name1}</div>
-		`)
-	})
+
+   
+	
+	
 }
 
 
