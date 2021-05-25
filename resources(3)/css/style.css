@@ -41,7 +41,7 @@ body {
     width: 555px;
     height: 35px;
     float:center;
-    border: 3px solid #73AD21;
+    border: 3px solid red;
     padding: 5px;
     color: green;
     line-height: 100%;
