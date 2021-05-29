@@ -22,7 +22,8 @@ $( document ).ready(function() {
     createMap(lat,lon,zl);
 	getGeoJSON();
     readCSV(path1);
-	createSidebar()
+	createSidebar();
+	addZips();
 	
 	
 });
@@ -69,17 +70,14 @@ function mapCSV(csvdata){
 		
 		
 
-		if (item.zip !== "9000"){
-
-			$('.sidebar').append(`<p align = "center"><u>${item.zip}</p>`)
-			
-		}
+		
 		
 		
 
 
 		
 	})
+	
 
 	// add featuregroup to map
 	markers.addTo(map)
@@ -90,6 +88,7 @@ function mapCSV(csvdata){
 	// fit map to markers
 	map.fitBounds(markers.getBounds())
 }
+
 function createSidebar(csvdata){
 	// Add description text
 	$('.sidebar').append(`
@@ -105,7 +104,15 @@ function createSidebar(csvdata){
 	
 }
 
+function addZips (){
+	geojson_data.features.forEach(function(item){
+		
+		$('.sidebar').append(`<p align = "center"><u>${item.properties.zipcode}</p>`)
 
+
+
+	})
+}
 function panToImage(index){
 	// zoom to level 17 first
 	map.setZoom(17);
