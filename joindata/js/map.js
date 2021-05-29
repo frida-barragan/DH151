@@ -23,9 +23,7 @@ $( document ).ready(function() {
 	getGeoJSON();
     readCSV(path1);
 	createSidebar();
-	addZips();
-	
-	
+
 });
 
 // function to read csv data
@@ -67,13 +65,6 @@ function mapCSV(csvdata){
 		// add marker to featuregroup
 		markers.addLayer(marker)
 		markers.bringToFront(markers)
-		
-		
-
-		
-		
-		
-
 
 		
 	})
@@ -96,15 +87,8 @@ function createSidebar(csvdata){
 	The map to the right shows the county of Los Angeles in California distributed by zip code. The user can hover over each zone to get data about the raw count of mental health facilities. The user can also click on the points to get further information about each facility.
 	</p>
 	`)
-
-	// add sidebar buttons
-
-   
-	
-	
 }
-
-function addZips (){
+function addZips(){
 	geojson_data.features.forEach(function(item){
 		
 		$('.sidebar').append(`<p align = "center"><u>${item.properties.zipcode}</p>`)
@@ -113,6 +97,7 @@ function addZips (){
 
 	})
 }
+
 function panToImage(index){
 	// zoom to level 17 first
 	map.setZoom(17);
@@ -219,6 +204,7 @@ function resetHighlight(e) {
 function zoomToFeature(e) {
 	map.fitBounds(e.target.getBounds());
 }
+
 
 function createInfoPanel(){
 	
