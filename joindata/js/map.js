@@ -23,7 +23,7 @@ $( document ).ready(function() {
 	getGeoJSON();
     readCSV(path1);
 	createSidebar();
-
+	addZips();
 });
 
 // function to read csv data
