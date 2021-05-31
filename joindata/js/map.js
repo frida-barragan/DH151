@@ -59,7 +59,15 @@ function mapCSV(csvdata){
 		let marker = L.circleMarker([item.latitude,item.longitude], circleOptions)
 		.on('mouseover',function(){
 			this.bindPopup(`<b><p align= "center">${item.name1}</b>
-			<br>${item.street1},<br>${item.city} ${item.zip}<br>${item.website}</p>`).openPopup()
+			<br>${item.street1},<br>${item.city} ${item.zip}<br>${item.website}</p>
+			
+			if (item.sp == "1"){append(`<u>Service ,Area, 8,`)}
+			
+			
+			
+			`
+			
+			).openPopup()
 		})
 
 		// add marker to featuregroup
@@ -97,6 +105,7 @@ function addZips(){
 
 	})
 }
+
 
 function panToImage(index){
 	// zoom to level 17 first
