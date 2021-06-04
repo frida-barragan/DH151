@@ -23,7 +23,6 @@ $( document ).ready(function() {
 	getGeoJSON();
     readCSV(path1);
 	createSidebar();
-	addZips();
 });
 
 // function to read csv data
@@ -127,6 +126,7 @@ function getGeoJSON(){
 
 		// call the map function
 		mapGeoJSON('NUMPOINTS', 9) //add a field to be used
+		addZips();
 	})
 }
 // function to map a geojson file and style it with choropleth
@@ -173,11 +173,13 @@ function mapGeoJSON(field, num_class){
 	createInfoPanel();
 }
 // Function that defines what will happen on user interactions with each feature
+
 function onEachFeature(feature, layer) {
 	layer.on({
 		mouseover: highlightFeature,
 		mouseout: resetHighlight,
 		click: zoomToFeature
+		
 	});
 }
 // on mouse over, highlight the feature
