@@ -429,12 +429,12 @@ function createLegend(){
 
 /* create zips list function */
 function createZiplist(){
-	csvdata.data.forEach(function(item,index){
-		zip_tracts.push(item.zip)
+	geojson_data.features.forEach(function(item){ /* this is a geojson file i am trying to link to the zipcodes in the csv file*/
+		zip_tracts.push(item.properties.zipcode)
 	});
-	csvdata.data.forEach(function(item,index){
+	csvdata.data.forEach(function(item,index){/* this is the data from the csv file that i am trying to add to the drpdown menu */
 		object = {
-			id: item.zip,
+			id: item.properties.zipcode,
 			text: `${item.zip}`
 		}
 		zip_bgs.push(object)
