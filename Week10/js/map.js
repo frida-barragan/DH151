@@ -11,6 +11,8 @@ let markers = L.featureGroup();
 let geojsonPath= 'data/zipsinfo.geo.json';
 let geojson_data= L.tileLayer;
 let geojson_layer;
+let zip_bgs = [];
+let zip_tracts = [];
 
 // map args
 let field; //is this the default field?
@@ -70,7 +72,9 @@ $( document ).ready(function() {
     createMap(lat,lon,zl);
 	getGeoJSON();
     readCSV(path1);
+	createZiplist()
 	createSlider();
+	
 });
 
 
@@ -348,6 +352,16 @@ function createSidebar(){
 		mapGeoJSON({field:data.value})
 	});
 	$('.sidebar').append(`<p class="sidebar-title"><b>Map variables by Zip:</b></p><div id="dropdown-layers"></div>`)
+	$('.sidebar').append(`<div class="dropdown" id="dropdown-blocks"></div>`)
+	$('#dropdown-blocks').selectivity({
+		allowClear: true,
+		items: zip_bgs,
+		placeholder: 'Search by block code',
+		showSearchInputInDropdown: true
+	}).on("change",function(data){
+		zoomToFIPS(data.value)
+	});
+
 
 	
 	
@@ -425,12 +439,9 @@ function createProgramDashboard(properties){
 	let age = [
 		properties.med_age
 	];
-	let fields = [
-		'item.med_age'
-	];
 	// set chart options
 	var options = {
-		series: [75],
+		series: [age],
 		chart: {
 		height: 350,
 		type: 'radialBar',
@@ -506,15 +517,16 @@ function createProgramDashboard(properties){
 	  stroke: {
 		lineCap: 'round'
 	  },
-	  labels: ['Age'],
+	  labels: ['Median Age'],
 	  };
 	 
 
-	  var chart = new ApexCharts(document.querySelector('.Programsdashboard'), options);
+	  var chart = new ApexCharts(document.querySelector('.dashboard'), options);
 	  chart.render();
 	  
 
 }
+
 function createDashboard(properties){
 
 	// clear dashboard
@@ -578,6 +590,17 @@ function createDashboard(properties){
 	chart.render()
 
 }
+function createZiplist(){
+	geojson_data.features.forEach(function(item){
+		
+		object={
+			id: `${item.properties.zipcode}`}
+
+
+		zip_bgs.push(object)
+		// geoid_list_bgs.push(item.properties.block_code)
+	});
+}
 
 
 
@@ -613,6 +636,8 @@ function createSlider(){
 	});
 
 }
+
+
 
 //map data in the slider
 function mapPrograms(num){
