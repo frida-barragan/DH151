@@ -74,7 +74,7 @@ $( document ).ready(function() {
     readCSV(path1);
 	
 	createSlider();
-	createZiplist()
+	
 });
 
 
@@ -219,12 +219,13 @@ function getGeoJSON(){
 			fillOpacity: 0.5
 		}).addTo(map)
 		
+		
 		// create sidebar
 		createSidebar();
 
 		//call create slider function
 		createSlider();	
-		
+		createZiplist()
 	})
 }
 
@@ -427,20 +428,7 @@ function createLegend(){
 		legend.addTo(map);
 }
 
-/* create zips list function */
-function createZiplist(){
-	geojson_data.features.forEach(function(item){ /* this is a geojson file i am trying to link to the zipcodes in the csv file*/
-		zip_tracts.push(item.properties.zipcode)
-	});
-	csvdata.data.forEach(function(item,index){/* this is the data from the csv file that i am trying to add to the drpdown menu */
-		object = {
-			id: item.properties.zipcode,
-			text: `${item.zip}`
-		}
-		zip_bgs.push(object)
-		// geoid_list_bgs.push(item.properties.block_code)
-	});
-}
+
 function createProgramDashboard(properties){
 	// clear dashboard
 	$('.dashboard').empty();
@@ -454,91 +442,6 @@ function createProgramDashboard(properties){
 		properties.med_age
 	];
 	// set chart options
-	var options = {
-		series: [age],
-		chart: {
-		height: 350,
-		type: 'radialBar',
-		toolbar: {
-		  show: true
-		}
-	  },
-	  plotOptions: {
-		radialBar: {
-		  startAngle: -135,
-		  endAngle: 225,
-		   hollow: {
-			margin: 0,
-			size: '70%',
-			background: '#fff',
-			image: age,
-			imageOffsetX: 0,
-			imageOffsetY: 0,
-			position: 'front',
-			dropShadow: {
-			  enabled: true,
-			  top: 3,
-			  left: 0,
-			  blur: 4,
-			  opacity: 0.24
-			}
-		  },
-		  track: {
-			background: '#fff',
-			strokeWidth: '67%',
-			margin: 0, // margin is in pixels
-			dropShadow: {
-			  enabled: true,
-			  top: -3,
-			  left: 0,
-			  blur: 4,
-			  opacity: 0.35
-			}
-		  },
-	  
-		  dataLabels: {
-			show: true,
-			name: {
-			  offsetY: -10,
-			  show: true,
-			  color: '#888',
-			  fontSize: '17px'
-			},
-			value: {
-			  formatter: function(val) {
-				return parseInt(val);
-			  },
-			  color: '#111',
-			  fontSize: '36px',
-			  show: true,
-			}
-		  }
-		}
-	  },
-	  fill: {
-		type: 'gradient',
-		gradient: {
-		  shade: 'dark',
-		  type: 'horizontal',
-		  shadeIntensity: 0.5,
-		  gradientToColors: ['#ABE5A1'],
-		  inverseColors: true,
-		  opacityFrom: 1,
-		  opacityTo: 1,
-		  stops: [0, 100]
-		}
-	  },
-	  stroke: {
-		lineCap: 'round'
-	  },
-	  labels: ['Median Age'],
-	  };
-	 
-
-	  var chart = new ApexCharts(document.querySelector('.dashboard'), options);
-	  chart.render();
-	  
-
 }
 
 function createDashboard(properties){
@@ -606,7 +509,22 @@ function createDashboard(properties){
 }
 
 
-
+/* create zips list function */
+function createZiplist(){
+	geojson_data.features.forEach(function(item){ /* this is a geojson file i am trying to link to the zipcodes in the csv file*/
+	
+		zip_tracts.push(item.properties.zipcode);
+		
+	});
+	csvdata.data.forEach(function(item){/* this is the data from the csv file that i am trying to add to the drpdown menu */
+		object = {
+			id: item.zip,
+			text: `${item.zip}`
+		}
+		zip_bgs.push(object);
+		// geoid_list_bgs.push(item.properties.block_code)
+	});
+}
 
 
 
