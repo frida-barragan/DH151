@@ -352,12 +352,12 @@ function createSidebar(){
 		console.log(data.value)
 		mapGeoJSON({field:data.value})
 	});
-	$('.sidebar').append(`<p class="sidebar-title"><b>Map variables by Zip:</b></p><div id="dropdown-layers"></div>`)
+	$('.sidebar').append(`<p class="sidebar-title"><b>Map variables by Zip Code:</b></p><div id="dropdown-layers"></div>`)
 	$('.sidebar').append(`<div class="dropdown" id="dropdown-blocks"></div>`)
 	$('#dropdown-blocks').selectivity({
 		allowClear: true,
-		items: zip_bgs,
-		placeholder: 'Search by block code',
+		items: zip_tracts,
+		placeholder: 'Search by zip code',
 		showSearchInputInDropdown: true
 	}).on("change",function(data){
 		zoomToFIPS(data.value)
@@ -513,7 +513,7 @@ function createDashboard(properties){
 function createZiplist(){
 	geojson_data.features.forEach(function(item){ /* this is a geojson file i am trying to link to the zipcodes in the csv file*/
 	
-		zip_tracts.push(item.properties.zipcode);
+		zip_tracts.push(`${item.properties.zipcode}`);
 		
 	});
 	csvdata.data.forEach(function(item){/* this is the data from the csv file that i am trying to add to the drpdown menu */
