@@ -106,6 +106,7 @@ h3{
     animation-delay: 15s;
     -webkit-animation-delay: 15s;
     animation-fill-mode: forwards;
+    border: 1px dotted black;
   }
   
   @keyframes fadeIn {
