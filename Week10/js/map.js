@@ -219,13 +219,13 @@ function getGeoJSON(){
 			fillOpacity: 0.5
 		}).addTo(map)
 		
-		
+		createZiplist()
 		// create sidebar
 		createSidebar();
 
 		//call create slider function
 		createSlider();	
-		createZiplist()
+		
 	})
 }
 
