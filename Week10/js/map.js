@@ -72,9 +72,9 @@ $( document ).ready(function() {
     createMap(lat,lon,zl);
 	getGeoJSON();
     readCSV(path1);
-	createZiplist()
-	createSlider();
 	
+	createSlider();
+	createZiplist()
 });
 
 
@@ -427,6 +427,20 @@ function createLegend(){
 		legend.addTo(map);
 }
 
+/* create zips list function */
+function createZiplist(){
+	csvdata.data.forEach(function(item,index){
+		zip_tracts.push(item.zip)
+	});
+	csvdata.data.forEach(function(item,index){
+		object = {
+			id: item.zip,
+			text: `${item.zip}`
+		}
+		zip_bgs.push(object)
+		// geoid_list_bgs.push(item.properties.block_code)
+	});
+}
 function createProgramDashboard(properties){
 	// clear dashboard
 	$('.dashboard').empty();
@@ -590,17 +604,7 @@ function createDashboard(properties){
 	chart.render()
 
 }
-function createZiplist(){
-	geojson_data.features.forEach(function(item){
-		
-		object={
-			id: `${item.properties.zipcode}`}
 
-
-		zip_bgs.push(object)
-		// geoid_list_bgs.push(item.properties.block_code)
-	});
-}
 
 
 
@@ -656,4 +660,7 @@ function mapPrograms(num){
 		filter:function(item){if(item.properties.programs>=num)return true}
 	}).addTo(map)
 }
+
+
+
 
