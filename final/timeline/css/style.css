@@ -7,16 +7,10 @@ body {
 	font-family:  'Gill Sans', sans-serif;
 	color:black;
 	display: grid;
-	grid-template-rows: 150px 1fr;
-                height: auto;
-                overflow-x: auto;
-                overflow-y: hidden;
-                white-space: nowrap;
-                grid-template-rows: auto;
 	grid-template-areas: 
-	"header"
-    "menu"
-	"content";
+	"header header"
+    "menu menu"
+	"content content";
 }
 
 .header {
@@ -24,20 +18,15 @@ body {
 	background-color: rgb(17, 1, 41);;
 	color: white;
 	font-size: 3em;
-	animation-name: hd;
-    animation-duration: 0s;
-    line-height: 0.1em;
+  size: 100%;
+	
 }
-@keyframes hd {
-	from {background-color: white  }
-	to {background-color: rgb(17, 1, 41);;}
-  }
 
 
 .content{
 	grid-area: content;
     margin: auto;
-    width: 100%;
+    width: 50%;
     height: 100%;
     bottom:-260px;
     left: 0px;
@@ -143,7 +132,7 @@ body {
 }
 img {
     float: left; 
-    margin: 10px;
+    margin: 15px;
 }
 
   .horizontal-scroll-wrapper  {
@@ -168,5 +157,6 @@ img {
     left: 0px;
     color:white;
   }
+  
 
 
