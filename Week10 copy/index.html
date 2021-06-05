@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mental Health Crisis and Services in Los Angeles County</title>
+	<meta charset="utf-8" />
+
+	<!-- style sheets -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- leaflet -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+	<!-- jquery -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/papaparse.min.js"></script>
+	<script src="js/leaflet-providers.js"></script>
+
+	<!-- classy brew -->
+	<script src="js/classybrew.js"></script>
+
+	<script src="js/rangeSlider/js/ion-rangeSlider/ion.rangeSlider.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="js/rangeSlider/css/ion.rangeSlider.css">
+	<link rel="stylesheet" href="js/rangeSlider/css/ion.rangeSlider.skinFlat.css">	
+
+	<!-- Load Esri Leaflet from CDN -->
+	<script src="https://unpkg.com/esri-leaflet@3.0.2/dist/esri-leaflet.js"
+		integrity="sha512-myckXhaJsP7Q7MZva03Tfme/MSF5a6HC2xryjAM4FxPLHGqlh5VALCbywHnzs2uPoF/4G/QVXyYDDSkp5nPfig=="
+		crossorigin=""></script>
+
+	<!-- apex charts -->
+	<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+	<!-- js-grid -->
+	<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.3/jsgrid.min.css" />
+	<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.3/jsgrid-theme.min.css" />
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.3/jsgrid.min.js"></script>
+	
+	 <!-- selectivity -->
+	 <link href="css/font-awesome.css" rel="stylesheet" />
+	 <link href="css/selectivity.css" rel="stylesheet" />
+	 <script src="js/selectivity-jquery.min.js"></script>
+	 <script src="js/selectivity.js"></script>
+
+</head>
+<body>
+	<div class="header">
+		Mental Health Services by Zip in Los Angeles County
+	</div>
+	
+	<div class="content">
+		<div id="map"></div>
+		<input type="text" class="js-range-slider" name="mapSlider" value="" />
+	</div>
+
+	<div class="slider-container">
+		<br>
+		<br>
+		<br>
+		<br>
+		<center>Slide for minimum number of facilities in each zip code</center>
+	</div>
+
+	<div class="dashboard">
+		
+	</div>
+
+	<div class="sidebar">
+
+	</div>
+	
+	<script src="js/map.js"></script>
+
+</body>
+</html>

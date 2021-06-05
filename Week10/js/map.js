@@ -72,7 +72,6 @@ $( document ).ready(function() {
     createMap(lat,lon,zl);
 	getGeoJSON();
     readCSV(path1);
-	
 	createSlider();
 	
 });
@@ -172,13 +171,13 @@ function mapCSV(csvdata){
 	
 		// add marker to featuregroup
 		markers.addLayer(marker)
-		markers.bringToFront(markers)
+		
 		
 	})
 
 	// add featuregroup to map
 	markers.addTo(map)
-
+	markers.bringToFront(markers)
 	// fit map to markers
 	map.fitBounds(markers.getBounds())
 }
@@ -435,12 +434,6 @@ function createProgramDashboard(properties){
 
 	console.log(properties)
 	
-	let title = 'Median age';
-
-	// data values
-	let age = [
-		properties.med_age
-	];
 	// set chart options
 }
 
@@ -516,19 +509,9 @@ function createZiplist(){
 		zip_tracts.push(`${item.properties.zipcode}`);
 		
 	});
-	csvdata.data.forEach(function(item){/* this is the data from the csv file that i am trying to add to the drpdown menu */
-		object = {
-			id: item.zip,
-			text: `${item.zip}`
-		}
-		zip_bgs.push(object);
 		// geoid_list_bgs.push(item.properties.block_code)
-	});
+
 }
-
-
-
-
 
 
 
