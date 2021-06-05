@@ -148,9 +148,10 @@ img {
 /* Three columns side by side */
 .column {
   float: left;
-  width: 33.3%;
+  width: 45%;
   margin-bottom: 16px;
   padding: 0 8px;
+  align-items: center;
 }
 
 /* Display the columns below each other instead of side by side on small screens */
@@ -168,6 +169,9 @@ img {
 
 /* Some left and right padding inside the container */
 .container {
+  padding: 0 16px;
+}
+.container1 {
   padding: 0 16px;
 }
 
@@ -197,3 +201,76 @@ img {
 .button:hover {
   background-color: #555;
 }
+/* Parent Container */
+.content_img{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left:10%;
+  margin-right: 10px;
+ }
+ .content_img2{
+  position: absolute;
+  width: 400px;
+  height: 200px;
+  left:57%;
+  margin-right: 10px;
+ }
+ 
+ /* Child Text Container */
+ .content_img div{
+  position: absolute;
+  align-content: center;
+  bottom: 0;
+  right: 0;
+  background: black;
+  color: white;
+  margin-bottom: 5px;
+  font-family: sans-serif;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: visibility 0s, opacity 0.5s linear; 
+  transition: visibility 0s, opacity 0.5s linear;
+ }
+ 
+ .content_img2 div{
+  position: absolute;
+  align-content: center;
+  bottom: 0;
+  right: 0;
+  background: black;
+  color: white;
+  margin-bottom: 5px;
+  font-family: sans-serif;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: visibility 0s, opacity 0.5s linear; 
+  transition: visibility 0s, opacity 0.5s linear;
+ }
+ 
+ /* Hover on Parent Container */
+ .content_img:hover{
+  cursor: pointer;
+ }
+ .content_img2:hover{
+  cursor: pointer;
+ }
+ 
+ .content_img:hover div{
+  width: 200px;
+  padding: 8px 15px;
+  visibility: visible;
+  opacity: 0.7; 
+  position: absolute;
+  left:50%;
+  bottom:-100%;
+ }
+ .content_img2:hover div{
+  width: 200px;
+  padding: 8px 15px;
+  visibility: visible;
+  opacity: 0.7; 
+  position: absolute;
+  left:15%;
+  bottom:-100%;
+ }
