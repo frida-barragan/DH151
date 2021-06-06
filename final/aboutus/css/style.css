@@ -22,9 +22,14 @@ body {
 	background-color: rgb(17, 1, 41);
 	color: white;
 	font-size: 3em;
-	
+	animation-name: hd;
+    animation-duration: 0s;
+    line-height: 0.1em;
 }
-
+@keyframes hd {
+	from {background-color: black  }
+	to {background-color: rgb(17, 1, 41);}
+  }
 
 .menu {
 	grid-area: menu;
@@ -116,7 +121,7 @@ body {
   background-color: #1c0d33;
   color: #bbb;
   min-width: 160px;
-  
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 

@@ -23,7 +23,7 @@ body {
 	color: white;
 	font-size: 3em;
 	animation-name: hd;
-    animation-duration: 11s;
+    animation-duration: 0s;
     line-height: 0.1em;
 }
 @keyframes hd {
@@ -52,7 +52,7 @@ body {
 
 .column {
   float: left;
-  width: 70.33%;
+  width: 100%;
 
 }
 
@@ -64,7 +64,7 @@ body {
 }
 .column1 {
   float: inline-start;
-  width: 69.33%;
+  width: 100%;
   text-align: left;
 
 }
