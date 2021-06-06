@@ -145,45 +145,23 @@ img {
     float: left; 
   
 }
-
-  .horizontal-scroll-wrapper  {
-    width:1000px;
-    height: 100%;
-    overflow-y:visible;
-    overflow-x:hidden;
-    transform: rotate(-90deg) translateY(-100px);
-    transform-origin: 100% ;
-    position: absolute;
-    left:-100px;
-    top:-410.7px;
-    background-color:rgb(17, 1, 41);
-    
-  }
-  .horizontal-scroll-wrapper > div {
-    width: 600px;
-    height: 690px;
-    transform: rotate(90deg);
-    transform-origin: 100%  ;
-    bottom:0px;
-    left: 0px;
-    color:white;
-  }
   
   #container
   {
-  height: 600px;
-  width: 100%;
-  background-color: #ddd;
-  overflow: hidden;
-  position: relative;
+  height: 800px;
+  width: 105%;
+  background-color:rgb(17, 1, 41);
+  overflow: visible;
+  position: absolute;
+  top: 0px;
+  left:-80px;
   overflow-x: scroll;
-    margin-top: 30px;
     display: inline-block;
   }
   
   #thumbs
   {
-  background-color: #ddd;
+  background-color: rgb(17, 1, 41);
   position: absolute;
   top: 0px;
   left: 0px;
@@ -200,6 +178,9 @@ img {
     background-color: #cdcdcd;
     margin: 0 -2px;
     border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    border-left: 1px solid #fff;
+    border-top: 1px solid #fff;
     display: inline-block;
     font-family: 'roboto condensed', sans-serif;
     font-size:60px;
@@ -332,31 +313,26 @@ img {
   }
   
   .bg-66 {
-    background: url(http://www.unido.org/uploads/tx_templavoila/history_07.jpg);
-    background-size:cover;
+    background: rgba(0,0,0,0.8);
+    
   }
   
   .bg-76 {
-    background: url(http://austria-forum.org/attach/Wissenssammlungen/Bibliothek/Wien_mit_den_Augen_des_Adlers/Wien_der_Moderne/UNO-City,_Austria_Center_Vienna/dkaiser_hav_25.jpg);
-    background-size:cover;
+    background: rgba(0,0,0,0.8);
   }
   
   .bg-86 {
-    background: url('https://upload.wikimedia.org/wikipedia/commons/e/e8/Power_Plant_(Tianjin,_China).jpg');
-    background-size:cover;
+    background: rgba(0,0,0,0.8);
   }
   
   .bg-96 {
-    background: url(http://www.oxfordbusinessgroup.com/sites/default/files/styles/chapter_header__710x233_/public/chapter_headers/ind1_2.png?itok=uxI_081i&c=af7608f5f35cf219c326e9b6e6a7d34c);
-    background-size:cover;
+    background: rgba(0,0,0,0.8);
   }
   
   .bg-06 {
-    background: url(http://www.3adi.org/tl_files/3ADIDocuments/Pictures/Greenshot_2014-01-08_18-32-54.jpg);
-    background-size:cover;
+    background: rgba(0,0,0,0.8);
   }
   
   .bg-16 {
-    background: url(https://i.dailymail.co.uk/i/pix/2012/07/23/article-0-142DF918000005DC-387_468x665.jpg);
-    background-size:cover;
+    background: rgba(0,0,0,0.8);
   }
