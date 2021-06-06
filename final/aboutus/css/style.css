@@ -116,7 +116,7 @@ body {
   background-color: #1c0d33;
   color: #bbb;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  
   z-index: 1;
 }
 
@@ -163,9 +163,7 @@ img {
 }
 
 /* Add some shadows to create a card effect */
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
+
 
 /* Some left and right padding inside the container */
 .container {
