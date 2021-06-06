@@ -269,6 +269,7 @@ img {
   position: absolute;
   left:50%;
   bottom:-100%;
+  border-radius: 25%;
  }
  .content_img2:hover div{
   width: 200px;
@@ -278,4 +279,5 @@ img {
   position: absolute;
   left:15%;
   bottom:-100%;
+  border-radius: 25%;
  }
