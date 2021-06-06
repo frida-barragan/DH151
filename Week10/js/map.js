@@ -11,8 +11,6 @@ let markers = L.featureGroup();
 let geojsonPath= 'data/zipsinfo.geo.json';
 let geojson_data= L.tileLayer;
 let geojson_layer;
-let zip_bgs = [];
-let zip_tracts = [];
 
 // map args
 let field; //is this the default field?
@@ -64,8 +62,7 @@ let map_variables = [
 		id: 'pctislander',
 	},
 ]
-
-
+	
 
 // initialize
 $( document ).ready(function() {
@@ -73,7 +70,6 @@ $( document ).ready(function() {
 	getGeoJSON();
     readCSV(path1);
 	createSlider();
-	
 });
 
 
@@ -171,13 +167,13 @@ function mapCSV(csvdata){
 	
 		// add marker to featuregroup
 		markers.addLayer(marker)
-		
+		markers.bringToFront(markers)
 		
 	})
 
 	// add featuregroup to map
 	markers.addTo(map)
-	markers.bringToFront(markers)
+
 	// fit map to markers
 	map.fitBounds(markers.getBounds())
 }
@@ -203,10 +199,9 @@ function getGeoJSON(){
 
 		// put the data in a global variable
 		geojson_data = data;
-		
+
 		/*call the map function
 		mapGeoJSON('programs', 8, 'PuBuGn', 'equal_interval') //add fields*/
-		
 
 		// create the layer and add to map. why twice?
 		geojson_layer = L.geoJson(geojson_data, {
@@ -217,14 +212,12 @@ function getGeoJSON(){
 			//fillColor: brew.getColorInRange(feature.properties[field]),
 			fillOpacity: 0.5
 		}).addTo(map)
-		
-		createZiplist()
+
 		// create sidebar
 		createSidebar();
 
 		//call create slider function
 		createSlider();	
-		
 	})
 }
 
@@ -315,7 +308,6 @@ function highlightFeature(e) {
 	info_panel.update(layer.feature.properties);
 
 	createDashboard(layer.feature.properties)
-	createProgramDashboard(layer.feature.properties)
 }
 
 // on mouse out, reset the style, otherwise, it will remain highlighted
@@ -335,9 +327,6 @@ function createSidebar(){
 	$('.sidebar').html('')
 	// layers
 	$('.sidebar').append(`<p class="sidebar-title"><b>Map variables by Zip:</b></p><div id="dropdown-layers"></div>`)
-	
-	
-
 
 	$('#dropdown-layers').selectivity({
 		allowClear: true,
@@ -351,21 +340,6 @@ function createSidebar(){
 		console.log(data.value)
 		mapGeoJSON({field:data.value})
 	});
-	$('.sidebar').append(`<p class="sidebar-title"><b>Map variables by Zip Code:</b></p><div id="dropdown-layers"></div>`)
-	$('.sidebar').append(`<div class="dropdown" id="dropdown-blocks"></div>`)
-	$('#dropdown-blocks').selectivity({
-		allowClear: true,
-		items: zip_tracts,
-		placeholder: 'Search by zip code',
-		showSearchInputInDropdown: true
-	}).on("change",function(data){
-		zoomToFIPS(data.value)
-	});
-
-
-	
-	
-
 }
 
 function createInfoPanel(){
@@ -427,29 +401,39 @@ function createLegend(){
 		legend.addTo(map);
 }
 
-
-function createProgramDashboard(properties){
+function createProgramDashboard(item){
 	// clear dashboard
-	$('.dashboard').empty();
+	$('.dashboard').html(`
+	<div style="text-align:center">
+		<h2>${item.name1}</h2>
+	</div>
+	`);
 
-	console.log(properties)
-	
-	// set chart options
+	console.log(item)
 }
 
 function createDashboard(properties){
 
+
 	// clear dashboard
-	$('.dashboard').empty();
+	$('.dashboard').html(`
+	<div style="text-align:center">
+		<h2>${properties.zipcode}</h2>
+		<h4>Zip Profile</h4>
+		<div style="font-size:3em;">${properties.programs}</div>
+		<p>facilities</p>
+	</div>
+	<table width="100%"><tr><td width="33%" class="dashboard1"></td><td width="33%" class="dashboard2"></td></tr></table>
+	`);
 
 	//output in console to make sure it's working
 	console.log(properties)
 
-	// chart title
-	let title = 'Zip Code: ' + properties.zipcode;
+	//chart title
+	let title = 'Zip Code ' + properties.zipcode;
 
 	// data values
-	let data = [
+	var data = [
 		properties.pctblack,
 		properties.pctlatinx,
 		properties.pctasian,
@@ -459,26 +443,59 @@ function createDashboard(properties){
 	];
 
 	// data fields
-	let fields = [
+	var fields = [
 		'% Black',
 		'% Latinx',
 		'% Asian',
 		'% White',
-		'% Native American',
+		'% Natve American',
 		'% Pacific Islander',
 	];
 
 	// set chart options
-	let options = {
+	var options = {
 		chart: {
-			type: 'bar',
-			height: 300,
+			type: 'pie',
+			height: 400,
+			width: 400,
 			animations: {
 				enabled: false,
 			}
 		},
-		title: {
-			text: title,
+		series: data,
+		labels: fields,
+		legend: {
+			position: 'right',
+			offsetY: 0,
+			height: 230,
+		}
+		
+	};
+	
+	//Bar chart 
+	//data values
+	var data = [
+		properties.programs,
+	];
+
+	// data fields
+	var fields = [
+		'# Facilities',
+	];
+
+	// create the chart
+	var chart = new ApexCharts(document.querySelector('.dashboard1'), options)
+	chart.render()
+
+	// bar chart
+	var options = {
+		chart: {
+			type: 'bar',
+			height: 300,
+			title: 'Facilities',
+			animations: {
+				enabled: false,
+			}
 		},
 		plotOptions: {
 			bar: {
@@ -493,28 +510,13 @@ function createDashboard(properties){
 		xaxis: {
 			categories: fields
 		}
-	}
+		
+	};
 	
 	// create the chart
-	let chart = new ApexCharts(document.querySelector('.dashboard'), options)
+	var chart = new ApexCharts(document.querySelector('.dashboard2'), options)
 	chart.render()
-
 }
-
-
-/* create zips list function */
-function createZiplist(){
-	geojson_data.features.forEach(function(item){ /* this is a geojson file i am trying to link to the zipcodes in the csv file*/
-	
-		zip_tracts.push(`${item.properties.zipcode}`);
-		
-	});
-		// geoid_list_bgs.push(item.properties.block_code)
-
-}
-
-
-
 
 // create the slider
 function createSlider(){
@@ -542,11 +544,9 @@ function createSlider(){
 
 }
 
-
-
 //map data in the slider
 function mapPrograms(num){
-	console.log('mapping zip codes with '+ num ,'or more programs') //usiing "num" from the data in the slider
+	console.log('mapping zip codes with '+num ,'or more programs') //usiing "num" from the data in the slider
 	// clearing layers so they don't build on top of one another with each change of the slider
 	if(topPrograms){
 		topPrograms.clearLayers()
@@ -561,7 +561,4 @@ function mapPrograms(num){
 		filter:function(item){if(item.properties.programs>=num)return true}
 	}).addTo(map)
 }
-
-
-
 
