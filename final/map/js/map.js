@@ -165,9 +165,52 @@ function mapCSV(csvdata){
 	${item.pi == "1" ? ("Private health insurance"): 
 	(stop = "")}<br>
 	${item.sf == "1" ? ("Cash or self-payment"): 
-	(stop = !null )}<br>
+	(stop = "" )}<br>
+<br>
+	<b>Languages other than English spoken:</b><br>
+	${item.sp == "1" ? ("Spanish"):
+	(stop = "")}<br>
+	${item.f4 == "1" ? ("Arabic"): 
+	(stop = "")}<br>
+	${item.f17 == "1" ? ("Any Chinese"): 
+	(stop = "")}<br>
+	${item.f19 == "1" ? ("Creole"): 
+	(stop = "")}<br>
+	${item.f25 == "1" ? ("Farsi"): 
+	(stop = "")}<br>
+	${item.f28 == "1" ? ("French"): 
+	(stop = "")}<br>
+	${item.f30 == "1" ? ("German"): 
+	(stop = "")}<br>
+	${item.f31 == "1" ? ("Greek"): 
+	(stop = "")}<br>
+	${item.f35 == "1" ? ("Hebrew"): 
+	(stop = "")}<br>
+	${item.f36 == "1" ? ("Hindi"): 
+	(stop = "")}<br>
+	${item.f37 == "1" ? ("Hmong"): 
+	(stop = "")}<br>
+	${item.f42 == "1" ? ("Italian"): 
+	(stop = "")}<br>
+	${item.f43 == "1" ? ("Japanese"): 
+	(stop = "")}<br>
+	${item.f47 == "1" ? ("Korean"): 
+	(stop = "")}<br>
+	${item.f66 == "1" ? ("Polish"): 
+	(stop = "")}<br>
+	${item.f67 == "1" ? ("Portuguese"): 
+	(stop = "")}<br>
+	${item.f70 == "1" ? ("Russian"): 
+	(stop = "")}<br>
+	${item.f81 == "1" ? ("Tagalog"): 
+	(stop = "")}<br>
+	${item.f92 == "1" ? ("Vietnamese"): 
+	(stop = "")}<br>
+
+</p>`
+
 	
-	</p>`
+	
 			)}
 
 		}
