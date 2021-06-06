@@ -225,7 +225,7 @@ function mapCSV(csvdata){
 	// add featuregroup to map
 	markers.addTo(map)
 				//add another call to open the dashboard
-	createProgramDashboard();
+
 			
 	
 		// add marker to featuregroup

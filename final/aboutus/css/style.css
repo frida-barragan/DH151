@@ -18,6 +18,7 @@ body {
 }
 
 .header {
+  font-family:  'Gill Sans', sans-serif;
 	height: 100%;
 	background-color: rgb(17, 1, 41);
 	color: white;

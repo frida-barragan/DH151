@@ -12,4 +12,4 @@ function animateValue(obj, start, end, duration) {
   }
   
   const obj = document.getElementById("value");
-  animateValue(obj, 0, 52000000 , 2700);
+  animateValue(obj, 0, 52000000 , 20000);
