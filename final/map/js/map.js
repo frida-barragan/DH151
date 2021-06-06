@@ -149,10 +149,13 @@ function mapCSV(csvdata){
 			click: function(){
 				isClicked= true
 				$('.dashboard').html(`<b><p align= "center">${item.name1}</b>
+				<br>
 	<br>${item.street1},
 	<br>${item.city} ${item.zip}
 	<br>${item.website}<br>
+	<br>
 	<br><b>Forms of payment accepted:</b><br>
+
 	${item.mc == "1" ? ("Medicare"): 
 	(stop = "")}<br>
 	${item.md == "1" ? ("Medicaid"): 
@@ -162,7 +165,7 @@ function mapCSV(csvdata){
 	${item.pi == "1" ? ("Private health insurance"): 
 	(stop = "")}<br>
 	${item.sf == "1" ? ("Cash or self-payment"): 
-	(stop = "")}<br>
+	(stop = !null )}<br>
 	
 	</p>`
 			)}
