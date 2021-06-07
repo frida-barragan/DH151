@@ -25,7 +25,7 @@ let scheme= 'equal_interval';
 let brew = new classyBrew();
 /*let fieldtomap; keep?*/
 let legend = L.control({position: 'bottomright'});
-let info_panel = L.control();
+//let info_panel = L.control();
 
 //slider variables
 let mapSlider = $(".js-range-slider").data("ionRangeSlider");
@@ -166,6 +166,10 @@ function mapCSV(csvdata){
 	${item.pi == "1" ? ("Private health insurance"): 
 	(stop = "-----")}<br>
 	${item.sf == "1" ? ("Cash or self-payment"): 
+	(stop = "-----" )}<br>
+	${item.pa == "1" ? ("Payment assistance"): 
+	(stop = "-----" )}<br>
+	${item.ss == "1" ? ("Sliding fee scale"): 
 	(stop = "-----" )}<br>
 <br>
 	<b>Languages other than English spoken:</b><br>
@@ -334,7 +338,7 @@ function mapGeoJSON(args){
 	createLegend();
 
 	//create info panel
-	createInfoPanel();
+	//createInfoPanel();
 }
 
 // style each feature
@@ -370,7 +374,7 @@ function highlightFeature(e) {
 		fillOpacity: .9
 	});
 	
-	info_panel.update(layer.feature.properties);
+	//info_panel.update(layer.feature.properties);
 
 	createDashboard(layer.feature.properties)
 }
@@ -378,7 +382,7 @@ function highlightFeature(e) {
 // on mouse out, reset the style, otherwise, it will remain highlighted
 function resetHighlight(e) {
 	geojson_layer.resetStyle(e.target);
-	info_panel.update() //resets info panel
+	//info_panel.update() //resets info panel
 
 }
 
@@ -408,7 +412,7 @@ function createSidebar(){
 		
 }
 
-function createInfoPanel(){
+/*function createInfoPanel(){
 
 	info_panel.onAdd = function (map) {
 		this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
@@ -436,7 +440,7 @@ function createInfoPanel(){
 	};
 
 	info_panel.addTo(map);
-}
+}*/
 
 // add legend
 function createLegend(){
@@ -481,7 +485,11 @@ function createDashboard(properties){
 		<div style="font-size:3em;">${properties.programs}</div>
 		<p>facilities</p>
 	</div>
-	<table width="100%"><tr><td width="33%" class="dashboard1"></td><td width="33%" class="dashboard2"></td></tr></table>
+	<table width="100%"><tr><td width="33%" class="dashboard1"></td></tr></table>
+	<br>
+	<p>Median Household Income:${properties.med_hhinc}</p>
+	<p>Percent of People Below the Poverty Line:${properties.pct_inpoverty}</p>
+	<p>Percent of People Who Are Uninsured:${properties.pct_noins}</p>
 	`);
 
 	//output in console to make sure it's working
@@ -530,7 +538,11 @@ function createDashboard(properties){
 		
 	};
 	
-	//Bar chart 
+	// create the chart
+	var chart = new ApexCharts(document.querySelector('.dashboard1'), options)
+	chart.render()
+
+	/*/Bar chart 
 	//data values
 	var data = [
 		properties.programs,
@@ -540,10 +552,6 @@ function createDashboard(properties){
 	var fields = [
 		'# Facilities',
 	];
-
-	// create the chart
-	var chart = new ApexCharts(document.querySelector('.dashboard1'), options)
-	chart.render()
 
 	// bar chart
 	var options = {
@@ -573,7 +581,7 @@ function createDashboard(properties){
 	
 	// create the chart
 	var chart = new ApexCharts(document.querySelector('.dashboard2'), options)
-	chart.render()
+	chart.render()*/
 }
 
 // create the slider

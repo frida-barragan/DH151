@@ -11,7 +11,7 @@ body,html {
 
 body {
 	display: grid;
-	grid-template-rows: 170px 5fr 1fr;
+	grid-template-rows: 150px 5fr 1fr;
 	grid-template-columns: 2fr 1fr;
 	grid-template-areas: 
 	"header header"
