@@ -1,0 +1,197 @@
+body,html {
+	margin:0;
+	height:100%;
+	width:100%;
+}
+header, html{
+  height:65%;
+}
+body {
+	font-family:  'Gill Sans', sans-serif;
+	color:white;
+	display: grid;
+  background-color: rgb(17, 1, 41);
+	grid-template-areas: 
+	"header"
+	"menu"
+  "content";
+}
+
+.header {
+	height: 100%;
+	background-color: rgb(17, 1, 41);
+	color: white;
+	font-size: 3em;
+	animation-name: hd;
+    animation-duration: 0s;
+    line-height: 0.1em;
+}
+@keyframes hd {
+	from {background-color: black  }
+	to {background-color: rgb(17, 1, 41);}
+  }
+
+.menu {
+	grid-area: menu;
+    margin: 100, 4px;
+    
+}
+.others{
+	grid-area: content;
+    margin: auto;
+    width: 555px;
+    height: 35px;
+    float:center;
+    border: 3px solid whitesmoke;
+    padding: 5px;
+    color: white;
+    line-height: 100%;
+  
+
+}
+
+.column {
+  float: left;
+  width: 100%;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column1 {
+  float: inline-start;
+  width: 100%;
+  text-align: left;
+
+}
+/* The dropdown container */
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #0c081c;
+  font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: right;
+  font-size: 16px;
+  color: #c0b2b2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  color: #c0b2b2;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #758eb7;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #1c0d33;
+  color: #bbb;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  position: absolute;
+  right: 36%;
+  background-color:rgb(17, 1, 41) ;
+  width: 500px;
+  height: 510px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: rgba(184, 181, 181, 0.596);
+  color: black;
+  transform: rotateY(180deg);
+}

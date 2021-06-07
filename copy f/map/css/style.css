@@ -1,0 +1,170 @@
+body,html {
+	margin:0;
+	height:100%;
+	width:100%;
+	font-family: Arial, Helvetica, sans-serif
+}
+
+#map {
+	height: 100%;
+}
+
+body {
+	display: grid;
+	grid-template-rows: 170px 5fr 1fr;
+	grid-template-columns: 2fr 1fr;
+	grid-template-areas: 
+	"header header"
+	"content dashboard"
+	"slider-container sidebar";
+}
+
+.dashboard {
+    grid-area: dashboard;
+}
+
+.header {
+	grid-area: header;
+	padding:-30px;
+	background-color: rgb(17, 1, 41);
+	color: white;
+	font-size: 3em;
+}
+
+
+.content {
+	grid-area: content;
+}
+
+.footer {
+	grid-area: footer;
+	padding:10px;
+	background-color: white;
+	font-size: 14px;
+}
+
+.slider-container {
+	background-color: #333333;
+	color:white;
+}
+
+/* legend styles */
+.info {
+	padding: 5px 10px;
+	font: 14px/16px Arial, Helvetica, sans-serif;
+	background: white;
+	background: rgba(255,255,255,0.8);
+	box-shadow: 0 0 15px rgba(0,0,0,0.2);
+	border-radius: 5px;
+	min-width: 100px;
+	min-height: 50px;
+}
+.info h4 {
+	margin: 0 0 5px;
+	color: #777;
+}
+
+.legend {
+	line-height: 18px;
+	color: #555;
+}
+.legend i {
+	width: 18px;
+	height: 18px;
+	float: left;
+	margin-right: 8px;
+	opacity: 0.7;
+}
+
+.button {
+	
+	background-color: rgb(37, 16, 70);
+    color: #f2f2f2;
+    float:right;
+    padding: 5px 10px;
+    margin-right: 5px;
+    font-size: 12px;
+    border-radius: 20px;
+    border:white;
+    cursor: pointer;
+}
+
+.button:hover{
+    background:#7c7b7b;
+    color:#fff;
+  }
+/* Dropdown Button */
+.dropbtn1 {
+	position: absolute;
+	bottom:1px;
+	left: 100px;
+	background-color: rgb(46, 22, 82);
+	color: white;
+	padding: 20px;
+	font-size: 16px;
+	align-items: center;
+  }
+  .dropbtn2 {
+	position: absolute;
+	bottom:1px;
+	left: 250px;
+	background-color: rgb(46, 22, 82);
+	color: white;
+	padding: 20px;
+	font-size: 16px;
+	align-items: center;
+  }
+  
+  .dropbtn4 {
+	position: absolute;
+	bottom:1px;
+	left: 400px;
+	background-color: rgb(46, 22, 82);
+	color: white;
+	padding: 15px;
+	font-size: 16px;
+	align-items: center;
+  }
+  .dropbtn5 {
+	position: absolute;
+	bottom:1px;
+	left: 550px;
+	background-color: rgb(46, 22, 82);
+	color: white;
+	padding: 15px;
+	font-size: 16px;
+	align-items: center;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+	position: relative;
+	display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
