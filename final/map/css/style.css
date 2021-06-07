@@ -11,7 +11,7 @@ body,html {
 
 body {
 	display: grid;
-	grid-template-rows: 150px 5fr 1fr;
+	grid-template-rows: 130px 5fr 1fr;
 	grid-template-columns: 2fr 1fr;
 	grid-template-areas: 
 	"header header"
@@ -25,10 +25,10 @@ body {
 
 .header {
 	grid-area: header;
-	padding:-30px;
+	padding:-50px;
 	background-color: rgb(17, 1, 41);
 	color: white;
-	font-size: 3em;
+	font-size: 2em;
 }
 
 
@@ -97,7 +97,7 @@ body {
 .dropbtn1 {
 	position: absolute;
 	bottom:1px;
-	left: 100px;
+	left: 450px;
 	background-color: rgb(46, 22, 82);
 	color: white;
 	padding: 20px;
@@ -107,7 +107,7 @@ body {
   .dropbtn2 {
 	position: absolute;
 	bottom:1px;
-	left: 250px;
+	left: 600px;
 	background-color: rgb(46, 22, 82);
 	color: white;
 	padding: 20px;
@@ -118,7 +118,7 @@ body {
   .dropbtn4 {
 	position: absolute;
 	bottom:1px;
-	left: 400px;
+	left: 750px;
 	background-color: rgb(46, 22, 82);
 	color: white;
 	padding: 15px;
@@ -128,7 +128,7 @@ body {
   .dropbtn5 {
 	position: absolute;
 	bottom:1px;
-	left: 550px;
+	left: 900px;
 	background-color: rgb(46, 22, 82);
 	color: white;
 	padding: 15px;
