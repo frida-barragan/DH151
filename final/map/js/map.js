@@ -154,58 +154,60 @@ function mapCSV(csvdata){
 	<br>${item.city} ${item.zip}
 	<br>${item.website}<br>
 	<br>
+	
 	<br><b>Forms of payment accepted:</b><br>
-
+	
 	${item.mc == "1" ? ("Medicare"): 
-	(stop = "")}<br>
+	(stop = "-----")}<br>
 	${item.md == "1" ? ("Medicaid"): 
-	(stop = "")}<br>
+	(stop = "-----")}<br>
 	${item.mi == "1" ? ("Military insurance"): 
-	(stop = "")}<br>
+	(stop = "-----")}<br>
 	${item.pi == "1" ? ("Private health insurance"): 
-	(stop = "")}<br>
+	(stop = "-----")}<br>
 	${item.sf == "1" ? ("Cash or self-payment"): 
-	(stop = "" )}<br>
+	(stop = "-----" )}<br>
 <br>
 	<b>Languages other than English spoken:</b><br>
 	${item.sp == "1" ? ("Spanish"):
-	(stop = "")}<br>
+	(stop = "-----")}<br>
 	${item.f4 == "1" ? ("Arabic"): 
-	(stop = "")}<br>
+	(stop = "-----")}<br>
 	${item.f17 == "1" ? ("Any Chinese"): 
-	(stop = "")}<br>
+	(stop = "-----")}<br>
 	${item.f19 == "1" ? ("Creole"): 
-	(stop = "")}<br>
+	(stop = "-----")}<br>
 	${item.f25 == "1" ? ("Farsi"): 
-	(stop = "")}<br>
+	(stop = "-----")}<br>
 	${item.f28 == "1" ? ("French"): 
-	(stop = "")}<br>
+	(stop = "-----")}<br>
 	${item.f30 == "1" ? ("German"): 
-	(stop = "")}<br>
+	(stop = "-----")}<br>
 	${item.f31 == "1" ? ("Greek"): 
-	(stop = "")}<br>
+	(stop = "-----")}<br>
 	${item.f35 == "1" ? ("Hebrew"): 
-	(stop = "")}<br>
+	(stop = "-----")}<br>
 	${item.f36 == "1" ? ("Hindi"): 
-	(stop = "")}<br>
+	(stop = "-----")}<br>
 	${item.f37 == "1" ? ("Hmong"): 
-	(stop = "")}<br>
+	(stop = "-----")}<br>
 	${item.f42 == "1" ? ("Italian"): 
-	(stop = "")}<br>
+	(stop = "-----")}<br>
 	${item.f43 == "1" ? ("Japanese"): 
-	(stop = "")}<br>
+	(stop = "-----")}<br>
 	${item.f47 == "1" ? ("Korean"): 
-	(stop = "")}<br>
+	(stop = "-----")}<br>
 	${item.f66 == "1" ? ("Polish"): 
-	(stop = "")}<br>
+	(stop = "-----")}<br>
 	${item.f67 == "1" ? ("Portuguese"): 
-	(stop = "")}<br>
+	(stop = "-----")}<br>
 	${item.f70 == "1" ? ("Russian"): 
-	(stop = "")}<br>
+	(stop = "-----")}<br>
 	${item.f81 == "1" ? ("Tagalog"): 
-	(stop = "")}<br>
+	(stop = "-----")}<br>
 	${item.f92 == "1" ? ("Vietnamese"): 
-	(stop = "")}<br>
+	(stop = "-----")}<br>
+	
 
 </p>`
 
