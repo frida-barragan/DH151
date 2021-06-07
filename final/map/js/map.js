@@ -147,80 +147,12 @@ function mapCSV(csvdata){
 				}
 			},
 			click: function(){
-				isClicked= true
-				$('.dashboard').html(`<b><p align= "center">${item.name1}</b>
-				<br>
-	<br>${item.street1},
-	<br>${item.city} ${item.zip}
-	<br>${item.website}<br>
-	<br>
-	
-	<br><b>Forms of payment accepted:</b><br>
-	
-	${item.mc == "1" ? ("Medicare"): 
-	(stop = "-----")}<br>
-	${item.md == "1" ? ("Medicaid"): 
-	(stop = "-----")}<br>
-	${item.mi == "1" ? ("Military insurance"): 
-	(stop = "-----")}<br>
-	${item.pi == "1" ? ("Private health insurance"): 
-	(stop = "-----")}<br>
-	${item.sf == "1" ? ("Cash or self-payment"): 
-	(stop = "-----" )}<br>
-	${item.pa == "1" ? ("Payment assistance"): 
-	(stop = "-----" )}<br>
-	${item.ss == "1" ? ("Sliding fee scale"): 
-	(stop = "-----" )}<br>
-<br>
-	<b>Languages other than English spoken:</b><br>
-	${item.sp == "1" ? ("Spanish"):
-	(stop = "-----")}<br>
-	${item.f4 == "1" ? ("Arabic"): 
-	(stop = "-----")}<br>
-	${item.f17 == "1" ? ("Any Chinese"): 
-	(stop = "-----")}<br>
-	${item.f19 == "1" ? ("Creole"): 
-	(stop = "-----")}<br>
-	${item.f25 == "1" ? ("Farsi"): 
-	(stop = "-----")}<br>
-	${item.f28 == "1" ? ("French"): 
-	(stop = "-----")}<br>
-	${item.f30 == "1" ? ("German"): 
-	(stop = "-----")}<br>
-	${item.f31 == "1" ? ("Greek"): 
-	(stop = "-----")}<br>
-	${item.f35 == "1" ? ("Hebrew"): 
-	(stop = "-----")}<br>
-	${item.f36 == "1" ? ("Hindi"): 
-	(stop = "-----")}<br>
-	${item.f37 == "1" ? ("Hmong"): 
-	(stop = "-----")}<br>
-	${item.f42 == "1" ? ("Italian"): 
-	(stop = "-----")}<br>
-	${item.f43 == "1" ? ("Japanese"): 
-	(stop = "-----")}<br>
-	${item.f47 == "1" ? ("Korean"): 
-	(stop = "-----")}<br>
-	${item.f66 == "1" ? ("Polish"): 
-	(stop = "-----")}<br>
-	${item.f67 == "1" ? ("Portuguese"): 
-	(stop = "-----")}<br>
-	${item.f70 == "1" ? ("Russian"): 
-	(stop = "-----")}<br>
-	${item.f81 == "1" ? ("Tagalog"): 
-	(stop = "-----")}<br>
-	${item.f92 == "1" ? ("Vietnamese"): 
-	(stop = "-----")}<br>
-	
-
-</p>`
-
-	
-	
-			)}
-
-		}
-		)	
+				isClicked= true,
+				createProgramDashboard(item)
+			}
+				
+				
+		})
 	
 		// add marker to featuregroup
 		markers.addLayer(marker)
@@ -230,6 +162,7 @@ function mapCSV(csvdata){
 
 	// add featuregroup to map
 	markers.addTo(map)
+	L.control.layers(null,overlays).addTo(map)
 				//add another call to open the dashboard
 
 			
@@ -243,7 +176,8 @@ function mapCSV(csvdata){
 	// fit map to markers
 	map.fitBounds(markers.getBounds())
 }
-L.control.layers(null,overlays).addTo(map)
+
+
 
 function panToImage(index){
 	// zoom to level 17 first
@@ -472,7 +406,79 @@ function createLegend(){
 }
 
 	
+function createProgramDashboard(item){
+	$('.dashboard').html(`<b><p align= "center">${item.name1}</b>
+				<br>
+	<br>${item.street1},
+	<br>${item.city} ${item.zip}
+	<br>${item.website}<br>
+	<br>
+	
+	<br><b>Forms of payment accepted:</b><br>
+	
+	${item.mc == "1" ? ("Medicare"): 
+	(stop = "-----")}<br>
+	${item.md == "1" ? ("Medicaid"): 
+	(stop = "-----")}<br>
+	${item.mi == "1" ? ("Military insurance"): 
+	(stop = "-----")}<br>
+	${item.pi == "1" ? ("Private health insurance"): 
+	(stop = "-----")}<br>
+	${item.sf == "1" ? ("Cash or self-payment"): 
+	(stop = "-----" )}<br>
+	${item.pa == "1" ? ("Payment assistance"): 
+	(stop = "-----" )}<br>
+	${item.ss == "1" ? ("Sliding fee scale"): 
+	(stop = "-----" )}<br>
+<br>
+	<b>Languages other than English spoken:</b><br>
+	${item.sp == "1" ? ("Spanish"):
+	(stop = "-----")}<br>
+	${item.f4 == "1" ? ("Arabic"): 
+	(stop = "-----")}<br>
+	${item.f17 == "1" ? ("Any Chinese"): 
+	(stop = "-----")}<br>
+	${item.f19 == "1" ? ("Creole"): 
+	(stop = "-----")}<br>
+	${item.f25 == "1" ? ("Farsi"): 
+	(stop = "-----")}<br>
+	${item.f28 == "1" ? ("French"): 
+	(stop = "-----")}<br>
+	${item.f30 == "1" ? ("German"): 
+	(stop = "-----")}<br>
+	${item.f31 == "1" ? ("Greek"): 
+	(stop = "-----")}<br>
+	${item.f35 == "1" ? ("Hebrew"): 
+	(stop = "-----")}<br>
+	${item.f36 == "1" ? ("Hindi"): 
+	(stop = "-----")}<br>
+	${item.f37 == "1" ? ("Hmong"): 
+	(stop = "-----")}<br>
+	${item.f42 == "1" ? ("Italian"): 
+	(stop = "-----")}<br>
+	${item.f43 == "1" ? ("Japanese"): 
+	(stop = "-----")}<br>
+	${item.f47 == "1" ? ("Korean"): 
+	(stop = "-----")}<br>
+	${item.f66 == "1" ? ("Polish"): 
+	(stop = "-----")}<br>
+	${item.f67 == "1" ? ("Portuguese"): 
+	(stop = "-----")}<br>
+	${item.f70 == "1" ? ("Russian"): 
+	(stop = "-----")}<br>
+	${item.f81 == "1" ? ("Tagalog"): 
+	(stop = "-----")}<br>
+	${item.f92 == "1" ? ("Vietnamese"): 
+	(stop = "-----")}<br>
+	
 
+</p>`
+
+	
+	
+			)}
+
+		
 
 function createDashboard(properties){
 
@@ -487,9 +493,9 @@ function createDashboard(properties){
 	</div>
 	<table width="100%"><tr><td width="33%" class="dashboard1"></td></tr></table>
 	<br>
-	<p>Median Household Income:${properties.med_hhinc}</p>
-	<p>Percent of People Below the Poverty Line:${properties.pct_inpoverty}</p>
-	<p>Percent of People Who Are Uninsured:${properties.pct_noins}</p>
+	<p>Median Household Income: <b>${properties.med_hhinc}</b></p>
+	<p>Percent of People Below the Poverty Line: <b>${properties.pct_inpoverty}</b></p>
+	<p>Percent of People Who Are Uninsured: <b>${properties.pct_noins}</b></p>
 	`);
 
 	//output in console to make sure it's working
