@@ -493,9 +493,9 @@ function createDashboard(properties){
 	</div>
 	<table width="100%"><tr><td width="33%" class="dashboard1"></td></tr></table>
 	<br>
-	<p>Median Household Income: <b>${properties.med_hhinc}</b></p>
-	<p>Percent of People Below the Poverty Line: <b>${properties.pct_inpoverty}</b></p>
-	<p>Percent of People Who Are Uninsured: <b>${properties.pct_noins}</b></p>
+	<p>Median Household Income: $<b>${properties.med_hhinc}</b></p>
+	<p>Percent of People Below the Poverty Line: <b>${properties.pct_inpoverty}%</b></p>
+	<p>Percent of People Who Are Uninsured: <b>${properties.pct_noins}%</b></p>
 	`);
 
 	//output in console to make sure it's working
