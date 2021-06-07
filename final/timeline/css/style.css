@@ -150,7 +150,7 @@ img {
   {
   height: 800px;
   width: 105%;
-  background-color:rgb(17, 1, 41);
+  background-color:rgb(24, 0, 59);
   overflow: visible;
   position: absolute;
   top: 0px;
@@ -173,6 +173,7 @@ img {
   }
   
   .history-block {
+    
     height: 100%;
     width: 300px;
     background-color: #cdcdcd;
@@ -216,8 +217,17 @@ img {
     font-weight:500;
       margin: 30px 20px;
   }
+  .year1 {
+    position: absolute;
+      top: 0px;
+      font-size: 30px;
+    font-weight:500;
+      margin: 30px 20px;
+      color:  rgb(255, 255, 161);
+  }
   
   .title {
+   font-family: 'Segoe UI', Tahoma,Verdana, sans-serif;
     position: absolute;
     display: block;
     width: 260px;
@@ -227,6 +237,30 @@ img {
     white-space: normal;
     transition: width 0.2s;
   }
+  .title1 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+     position: absolute;
+     display: block;
+     width: 260px;
+       top: 60px;
+       font-size: 15px;
+       margin: 30px;
+     white-space: normal;
+     transition: width 0.2s;
+     color: rgb(41, 143, 143);
+   }
+   .title2 {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+     position: absolute;
+     display: block;
+     width: 260px;
+       top: 60px;
+       font-size: 22px;
+       margin: 30px;
+     white-space: normal;
+     transition: width 0.2s;
+     color: rgb(247, 139, 139);
+   }
   
   .timeline {
     display:none;
