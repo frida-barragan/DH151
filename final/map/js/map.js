@@ -8,7 +8,7 @@ let path1 = "data/mental.csv";
 let path = '';
 let csvdata;
 let markers = L.featureGroup();
-let geojsonPath= 'data/zipsinfo.geo.json';
+let geojsonPath= 'data/zipsinfo2.geo.json';
 let geojson_data= L.tileLayer;
 let geojson_layer;
 let zip_bgs = [];
